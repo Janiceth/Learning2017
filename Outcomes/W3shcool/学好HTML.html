@@ -1,0 +1,188 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<style  type="text/css">
+p.txt2{padding-left:2em;}   
+<!--
+text-ident:2em 首行缩进2字符
+padding-left:2em 每行缩进2字符
+-->  
+.city{
+	background-color:#EEE8CD;
+	color:black;
+	margin:5px;
+	padding:5px;	
+} 
+p.txt1{background-color:#EEE8CD;color:black;margin:20px;padding:20px;padding-left:2em;}
+
+table
+	{
+		border-collapse:collapse;
+	}
+table,td,th
+	{
+		border:1px solid black;
+	}
+</style>
+</head>
+<body bgcolor="#F5FFFA">
+
+<h1 style="text-align:center">HTML初探</h1>
+<hr/>     
+<h2>一、标签和元素</h2>
+<p class="txt2">
+1.从开始标签起始，结束标签终止。<br/>
+2.元素内容为开始标签与结束标签之间的内容。<br/>
+3.空的HTML元素：<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp没有内容的HTML元素被称为空元素。空元素在开始标签被关闭。如&lt;br/&gt;.在XHTML、XML以及未来版本的HTML中，所有元素必须被关闭。在开始标签中加斜杠“/"是正确的关闭空元素的方法<br/>
+4.大多数HTML元素可以拥有属性<br/>
+5.大多数HTML元素可以嵌套<br/>
+</p>
+<div class="city">
+<p class="txt1">
+举个栗子：<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;html&gt;元素定义了整个HTML文档<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;body&gt;元素定义了HTML文档的主体<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;h1&gt;~&lt;h6&gt;元素定义了HTML文档的标题,&lt;h1&gt;最大，&lt;h6&gt;最小<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;hr&gt;元素定义了水平线，可以用来分隔内容<br/>
+	
+</P>
+</div>
+<p class="txt2">
+6.&lt;p&gt;元素定义了HTML文档的段落，&lt;p&gt;为块级元素，浏览器会自动在段落前后加空行<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注意：不要使用空格段落标记去插入一个空行，请使用&lt;br/&gt;代替<br/>
+7.HTML标签大小写：<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHTML标签对大小写不敏感，但万维网 W3C在HTML 4中推荐使用小写，而在未来的（X）HTML版本中将强制使用小写<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注意：html结束标签遗漏，目前多数浏览器可以正确显示，但此为一种非常不可取做法，也许会产生不可预料的错误，故注意不要遗漏结束标签<br/>
+8.标签类别：基础标签、格式标签、表单标签、框架标签、图像标签、音频/视频标签、链接标签、列表标签、表格标签、样式/节标签、元信息标签、编程标签<br/>
+</p>
+
+
+<h2 align="left">二、HTML属性</h2>
+<p> HTML标签可以拥有属性。属性提供了元素更多的信息，属性总以“名称-值”对出现，如：name=“value”，属性是在开始标签中定义 </p> 
+<p class="txt1">
+举个栗子：<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt;a&gt;标签定义了链接，href属性指定链接地址<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &lt;h1&gt;:align属性指定对齐方式的属性信息<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;body&gt;:bgcolor属性指定背景颜色<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;table&gt;定义了表格，其border属性指定表格边框<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp class="classname”：规定元素的类名（classname）<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp id="id":规定元素的唯一ID<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp style="style_definition":规定元素的行内样式（inline style）<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp title="text"：规定元素的额外信息（可在工具提示中显示）<br/>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 注意：属性的值需要加引号，单双引号均可，但若属性值内容本身包含有双引号，则使用单引号标识<br/>
+	PS:当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。<br/>
+</p>
+<a href="http://www.idealens.com">IDEALENS</a>
+<img src="http://static.idealens.com/dist-static/images/home/k2summary/glass.png?v=b356f" width="25" high="16"/>
+
+
+<h2>三、Style样式</h2>
+<p class="txt2">
+	style属性提供了一种改变所有HTML元素的样式的通用方法,通过HTML样式，能够通过使用style属性直接将样式添加到HTML元素中，style属性替代了一些HTML旧有标签和属性<br/>
+<table >
+	<tr>
+		<th>标签</th>
+		<th>描述</th>
+		<th>style替代</th>
+	</tr>
+	<tr>
+		<td>&lt;center&gt; </td>
+		<td>定义居中的内容</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>&lt;font%gt;和&lt;basefont&gt; </td>
+		<td>定义HTML字体</td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td>&lt;s&gt;和&lt;strike&gt; </td>
+		<td>定义删除线文本</td>
+		<td>使用 &lt;del&gt;> 代替。 </td>
+	</tr>
+	<tr>
+		<td>&lt;u&gt;</td>
+		<td>定义下划线文本</td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td>属性</td>
+		<td>描述</td>
+		<td>style替代</td>
+	</tr>
+	<tr>
+		<td>align</td>
+		<td>定义文本的对齐方式</td>
+		<td>text-align规定了元素中文本的水平对齐方式：<br/>style="text-align:center"</td>
+	</tr>
+	<tr>
+		<td>bgcolor</td>
+		<td>定义背景色</td>
+		<td>background-color 属性为元素定义了背景颜色：<br/> style="background-color:yellow"></td>
+	</tr>
+	<tr>
+		<td>color</td>
+		<td>定义文本颜色</td>
+		<td> font-family、color 以及 font-size 属性分别定义元素中文本的<br/>字体系列、颜色和字体尺寸：<br/>style="font-family:verdana"<br/>style="font-family:arial;color:red;font-size:20px;"</td>
+	</tr>
+</table>
+</p>
+
+<h2>四、HTML格式化</h2>
+<p class="txt2">文本格式化标签</P>
+<table>
+	<tr>
+		<th>标签</th>
+		<th>描述</th>
+	</tr>
+	<tr>
+		<td>&lt;b&gt;</td>
+		<td>定义粗体文本</td>
+	</tr>
+	<tr>
+		<td>&lt;big&gt;</td>
+		<td>定义大号字</td>
+	</tr>
+	<tr>
+		<td>&lt;em&gt;</td>
+		<td>定义着重文字</td>
+	</tr>
+	<tr>
+		<td>&lt;i&gt;</td>
+		<td>定义斜体字</td>
+	</tr>
+	<tr>
+		<td>&lt;small&gt;</td>
+		<td>定义小号字</td>
+	</tr>
+	<tr>
+		<td>&lt;strong&gt;</td>
+		<td>&lt;定义加重语气&gt;</td>
+	</tr>
+	<tr>
+		<td>&lt;sub&gt;</td>
+		<td>定义下标字</td>
+	</tr>
+	<tr>
+		<td>&lt;sup&gt;</td>
+		<td>定义上标字</td>
+	</tr>
+	<tr>
+		<td>&lt;ins&gt;</td>
+		<td>定义插入字</td>
+	</tr>
+	<tr>
+		<td>&lt;del&gt;</td>
+		<td>定义删除字</td>
+	</tr><tr>
+		<td>&lt;s&gt;&lt;strike&gt;</td>
+		<td>建议使用&lt;del&gt;代替</td>
+	</tr><tr>
+		<td>&lt;u&gt;</td>
+		<td>建议使用（style）样式代替</td>
+</table>
+
+</body>
+</html>
