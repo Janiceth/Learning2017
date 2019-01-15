@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="230842" name="APP3.1测试用例" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="230843" name="天气录制_功能_成功录制AR天气视频_01_ST">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[1048]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功录制AR天气视频]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 录制过程中滑动城市列表<br />
+3. 录制过程中展开，关闭天气详情<br />
+4. 在3~15s内，点击录制按钮，预览录制的视频]]></actions>
+	<expectedresults><![CDATA[1. 点击录制按钮到开始录制的时间小于500ms<br />
+2. 城市切换顺畅，录制功能正常<br />
+3. 成功展开/关闭天气详情，天气详情显示清晰正确<br />
+4. 成功自动进入视频列表，视频播放正确，视频中的声音和天气音效播放正确]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230846" name="天气录制_功能_成功分享AR天气视频_02_ST">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[1049]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功分享AR天气视频至微信朋友，微信朋友圈，微博]]></summary>
+	<preconditions><![CDATA[1. 录制了多个视频A，B，C，均没有上传至服务器
+2. 录制视频D，录制完成后进入视频分享页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 滑动视频列表，预览视频A，点击保存视频<br />
+2. 退出预览，分享视频B至微博<br />
+3. 滑动列表，分享视频D至微信朋友<br />
+4. 滑动列表，分享视频C至微信朋友圈<br />
+5. 进入微博，微信查看分享的视频]]></actions>
+	<expectedresults><![CDATA[1. 成功预览并保存视频至本地，<br />
+2. 成功分享视频B至微博，分享文案为：“感受下身临其境的幻视AR天气，点击播放+视频链接”<br />
+3. 成功分享视频D至微信朋友，分享文案为：“感受下身临其境的幻视AR天气，点击播放”<br />
+4. 成功分享视频C至微信朋友圈<br />
+5. 视频在微博，微信正确播放]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230849" name="天气录制_功能_录制过程中切换天气效果_03">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[1050]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[录制过程中切换天气效果]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 录制过程中连续点击7次天气信息区域<br />
+3. 点击彩蛋图标，切换AR天气<br />
+4. 连续点击7次天气信息区域]]></actions>
+	<expectedresults><![CDATA[1. 成功开始录制视频<br />
+2. 点击过程中提示还剩N次可打开彩蛋功能，7次之后成功开启彩蛋功能<br />
+3. 录制过程中成功切换AR天气<br />
+4. 成功隐藏彩蛋功能]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230852" name="天气录制_功能_录制时长边界值测试_04">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[1051]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[录制视频小于3s，大于15s边界值测试]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 录制时间小于3s的时候，点击录制按钮<br />
+3. 点击录制按钮，录制到15s时，点击录制按钮<br />
+4. 预览录制的视频，查看视频总时间<br />
+5. 返回AR天气页，录制视频超过15s<br />
+6. 预览录制的视频，查看视频总时间]]></actions>
+	<expectedresults><![CDATA[1. 成功开始录制视频<br />
+2. 提示用户，“最短需要录制3s视频”，停止录制<br />
+3. 15s后成功进入视频分享页<br />
+4. 视频总时间小于/等于15s<br />
+5. 成功录制视频，15s之后自动进入视频分享页<br />
+6. 视频总时间登录15s]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230855" name="天气录制_中断_录制过程中与手机系统交互_05">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[1052]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[录制过程中点击Home，返回键，锁屏解锁，停止录制]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 录制AR天气视频，录制过程中点击Home键返回手机主页<br />
+2. 录制AR天气视频，录制过程中锁屏解锁<br />
+3. 录制AR天气视频，录制过程中点击返回键（Android）<br />
+4. 录制AR天气视频，录制过程中调节音量键]]></actions>
+	<expectedresults><![CDATA[1. 成功返回手机主页，视频停止录制<br />
+2. 成功锁屏解锁，视频停止录制<br />
+3. 成功退出AR天气录制界面，视频停止录制<br />
+4. 成功调节音量大小，视频录制正确，音效播放正确]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230858" name="天气录制_异常_断开网络分享视频_06">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[1053]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[录制过程中断开网络分享视频]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 断开网络，点击录制按钮<br />
+2. 超过3s之后点击录制按钮<br />
+3. 点击微博，微信朋友，微信朋友圈<br />
+4. 开启网络，分享视频至微博，微信朋友，微信朋友圈]]></actions>
+	<expectedresults><![CDATA[1. 成功开始录制视频<br />
+2. 成功进入视频分享页<br />
+3. 提示用户网络错误<br />
+4. 成功分享至微博，微信朋友，微信朋友圈]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230861" name="天气录制_异常_不满足条件分享_07">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[1054]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[没有安装微博，微信APP]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 超过3s之后点击录制按钮<br />
+3. 点击微博，微信朋友，微信朋友圈<br />
+4. 下载微博，微信，分享视频至微博，微信朋友，微信朋友圈]]></actions>
+	<expectedresults><![CDATA[1. 成功开始录制视频<br />
+2. 成功进入视频分享页<br />
+3. 提示用户没有安装微博，微信APP<br />
+4. 成功分享至微博，微信朋友，微信朋友圈]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230864" name="天气录制_异常_同时/多次触发录制事件_08">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[1055]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[1. 点击录制按钮的同时，点击截图分享按钮/截图按钮
+2. 快速触发录制按钮，分享按钮]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 在AR天气页，同时点击录制，截图按钮<br />
+2. 在AR天气页，快速多次点击录制按钮<br />
+3. 在AR分享页，快速多次点击微博，微信朋友，微信朋友圈按钮]]></actions>
+	<expectedresults><![CDATA[1. 仅触发最早的点击事件，幻视正常运行<br />
+2. 仅触发一次录制事件，幻视正常运行<br />
+3. 仅触发一次分享事件，幻视正常运行]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230867" name="天气录制_场景_滑动视频列表时交互操作_09">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[1056]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[快速滑动视频列表，滑动过程中分享视频]]></summary>
+	<preconditions><![CDATA[1. 录制了多个视频A，B，C，均没有上传至服务器
+2. 录制视频D，录制完成后进入视频分享页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 滑动视频列表，视频滑动过程中点击分享微博，微信朋友，微信朋友圈按钮<br />
+2. 返回视频分享页，滑动视频列表，锁屏解锁<br />
+3. 滑动视频列表，点击Home键，再进入<br />
+4. 滑动视频列表，点击返回键（Android还有HW-Back键）]]></actions>
+	<expectedresults><![CDATA[1. 成功跳转微博，微信朋友，微信朋友圈分享界面<br />
+2. 成功锁屏解锁，列表显示正确<br />
+3. 成功进入视频分享页，视频列表显示正确<br />
+4. 成功返回AR天气页]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230870" name="天气录制_界面_AR天气界面显示_10">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[1057]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[录制过程中，返回键，天气截屏键，分享键，添加城市键隐藏，录制完成后再显示]]></summary>
+	<preconditions><![CDATA[进入AR天气页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 检查天气详情页，城市列表显示<br />
+3. 查看返回键，截图键，分享键，添加城市键<br />
+4. 点击隐藏按键区域]]></actions>
+	<expectedresults><![CDATA[1. 成功开始录制视频<br />
+2. 天气详情显示正确，城市列表显示正确<br />
+3. 隐藏返回键，截图键，分享键，添加城市键<br />
+4. 点击隐藏按键区域没有反应]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230873" name="天气录制_异常_未获取系统使用麦克风权限_11">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[1058]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[若未获取到手机麦克风权限则录制的视频不包含声音；录制时小提示“无法获录音权限，视频将没有声音” 3s后自动消失]]></summary>
+	<preconditions><![CDATA[1. 手机系统里取消幻视APP调用系统麦克风权限
+2. 进入AR天气]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 点击录制按钮<br />
+2. 切换天气，查看天气音效<br />
+3. 结束录制预览视频]]></actions>
+	<expectedresults><![CDATA[1. 录制时显示小提示"无法获取录音权限，视频将没有声音"，3s后自动消失<br />
+2. 成功切换音效，天气音效播放正确<br />
+3. 成功预览视频，视频无声音]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230876" name="表单组件_功能_支持表单组件的元件验证_01_ST">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[1059]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证图片，图形，文字，浮屏按键支持表单提交，点击进入表单页面]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A有四页
+2. 第一页分别设置图片，图形，文字，浮屏按键的交互事件为：预约报名（默认设置）
+3. 第二页分别设置图片，图形，文字，浮屏按键的交互事件为：职位申请（默认设置）
+4. 第三页分别设置图片，图形，文字，浮屏按键的交互事件为：奖品寄送（默认设置）
+5. 第四页分别设置图片，图形，文字，浮屏按键的交互事件为：自定义（所有内容）]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 第一页点击图片，图形，文字，浮屏按键，查看交互事件<br />
+3. 第二页点击图片，图形，文字，浮屏按键，查看交互事件<br />
+4. 第三页点击图片，图形，文字，浮屏按键，查看交互事件<br />
+5. 第四页点击图片，图形，文字，浮屏按键，查看交互事件]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A<br />
+2. 图片，图形，文字，浮屏按键的交互事件均为：预约报名。名字，电话必填，留言栏非必填<br />
+3.  图片，图形，文字，浮屏按键的交互事件均为：职位申请。名字，电话，邮箱必填，留言栏非必填<br />
+4.  图片，图形，文字，浮屏按键的交互事件均为：奖品寄送。名字，电话，地址必填，留言栏非必填<br />
+5.  图片，图形，文字，浮屏按键的交互事件均为：自定义。必填项和非必填项与设置保持一致 ]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230879" name="表单组件_功能_验证预约报名表单类型_02_ST">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[1060]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证表单类型：预约报名,包含姓名，电话，短信验证，留言；自定义标题显示正确，正确输入相关信息，成功提交表单]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，为主题A里的图片元件a添加交互事件为提交表单内容，提交的表单类型为【预约报名】
+2. 表单标题为："测试预约报名123*&%$^ABCD"]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A,点击元件a<br />
+2. 查看表单标题<br />
+3. 填写正确的名字，电话号码和留言，点击提交表单<br />
+4. 查看内容创建中，主题A表单分析]]></actions>
+	<expectedresults><![CDATA[1. 成功进入表单提交页<br />
+2. 提交表单页标题为："测试预约报名123*&%$^ABCD"<br />
+3. 成功提交表单<br />
+4. 提交的表单内容显示于统计分析中]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230882" name="表单组件_功能_验证职位申请表单类型_03_ST">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[1061]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证表单类型：职位申请，包含姓名，电话，短信验证，邮箱，留言；自定义标题显示正确，正确输入相关信息，成功提交表单]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，为主题A里的浮屏按键元件a添加交互事件为提交表单内容，提交的表单类型为【职位申请】
+2. 表单标题为："测试职位申请123*&%$^ABCD"]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A,点击元件a<br />
+2. 查看表单标题<br />
+3. 填写正确的名字，电话号码和留言，邮箱地址点击提交表单<br />
+4. 查看内容创建中，主题A表单分析]]></actions>
+	<expectedresults><![CDATA[1. 成功进入表单提交页<br />
+2. 提交表单页标题为："测试职位申请123*&%$^ABCD"<br />
+3. 成功提交表单<br />
+4. 提交的表单内容显示于统计分析中]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230885" name="表单组件_功能_验证奖品寄送表单类型_04_ST">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[1062]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证表单类型：奖品寄送，包含姓名，电话，短信验证，地址，留言；自定义标题显示正确，正确输入相关信息，成功提交表单]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，为主题A里的文字元件a添加交互事件为提交表单内容，提交的表单类型为【奖品寄送】
+2. 表单标题为："测试奖品寄送123*&%$^ABCD"]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A,点击元件a<br />
+2. 查看表单标题<br />
+3. 填写正确的名字，电话号码和留言，地址点击提交表单<br />
+4. 查看内容创建中，主题A表单分析]]></actions>
+	<expectedresults><![CDATA[1. 成功进入表单提交页<br />
+2. 提交表单页标题为："测试奖品寄送123*&%$^ABCD"<br />
+3. 成功提交表单<br />
+4. 提交的表单内容显示于统计分析中]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230888" name="表单组件_功能_验证自定义表单类型_05_ST">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[1063]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证表单类型：自定义，自定义标题显示正确，添加所有表单类容；正确输入相关信息，成功提交表单]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，为主题A里的图片元件a添加交互事件为提交表单内容，提交的表单类型为【自定义】
+2. 表单标题为："测试自定义表单123*&%$^ABCD"
+3. 内容创建平台设置自定义表单内容为所有可选内容
+4. 所有选项为必选]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a<br />
+2. 查看表单标题<br />
+3. 填写合法的姓名，性别，电话，邮箱，公司，地址，留言，点击提交表单<br />
+4. 查看内容创建中，主题A表单分析]]></actions>
+	<expectedresults><![CDATA[1. 成功进入表单提交页<br />
+2. 提交表单页标题为："测试自定义表单123*&%$^ABCD"，所有选项前面都有*号显示<br />
+3. 成功提交表单，关闭表单并小窗提示“内容提交成功”<br />
+4. 提交的表单内容显示于统计分析中]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230891" name="表单组件_功能_表单缓存_06">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[1064]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[表单缓存机制为保存已下载的表单信息]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a，浮屏按键b
+2. 给a元件添加职位申请的表单组件交互事件α
+3. 给b元件添加奖品寄送的表单组件交互事件β
+4. 存在主题B，主题B里有文字元件c
+5. 给c元件添加预约报名元件γ]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a，填写并提交α表单<br />
+2. 点击元件b，填写并提交β表单<br />
+3. 断开网络，点击元件a<br />
+4. 关闭α表单，点击元件b<br />
+5. 退出主题A，开启网络，扫描主题B<br />
+6. 点击元件c]]></actions>
+	<expectedresults><![CDATA[1. 成功显示职位申请表单α<br />
+2. 成功提交职位申请表单<br />
+3. 成功显示奖品寄送表单β，不会显示职位申请表单α内容<br />
+4. 成功提交奖品寄送表单<br />
+5. 成功显示职位申请表单α，不会显示奖品寄送表单β<br />
+6. 成功显示预约报名表单γ，不会显示A主题的表单缓存内容]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230894" name="表单组件_功能_填写表单与系统交互测试_07">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[1065]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[填写表单时，返回Home，锁屏解锁，接受来电，接受闹钟之后返回，表单显示正确]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a，填α表单<br />
+2. 填写表单过程中接受来电<br />
+3. 填写表单过程中闹钟响起<br />
+4. 填写表单过程中点击Home返回再启动幻视<br />
+5.1 在表单界面点击关闭按钮<br />
+5.2 Android手机在表单界面点击HW-Back键<br />
+6. 点击确认退出键]]></actions>
+	<expectedresults><![CDATA[1. 成功弹出自定义表单，表单内容和设置保持一致<br />
+2. 成功接受来电，返回幻视后，表单显示正常，幻视意外<br />
+3. 成功接受闹钟，返回幻视后，表单显示正常，幻视意外<br />
+4. 成功返回Home，启动幻视后，表单显示正常，幻视意外<br />
+5.1 弹出确认退出表单提示框<br />
+5.2 弹出确认退出表单提示框<br />
+6. 成功退出表单]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230897" name="表单组件_异常_获取验证码异常操作_08">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[1066]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[获取验证码时，快速点击获取验证码，弱网情况获取验证码]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项
+4. 网络环境为：弱网环境]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.  扫描主题A，点击元件α，填写表单<br />
+2. 输入手机号，快速点击获取验证码<br />
+3.1 验证码正在倒计时时，点击X键关闭表单（iOS&Android）<br />
+3.2 验证码正在倒计时时，Android点击HW-Back键关闭表单<br />
+4. 点击确认键<br />
+5. 点击元件a，获取验证码，填写表单，在弱网情况下快速点击提交按钮<br />
+6. 查看内容创建平台表单统计]]></actions>
+	<expectedresults><![CDATA[1. 成功进入自定义表单页<br />
+2. 成功获取一条验证码，只触发一次点击事件<br />
+3. 成功弹出确认退出表单提示框<br />
+4. 成功退出表单<br />
+5. 成功提交表单，只触发一次点击事件<br />
+6. 表单统计显示正确]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230900" name="表单组件_异常_提交表单网络错误_09">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[1067]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[1. 提交表单时，网络中断，提示用户网络错误
+2. 后端的短信验证条数为0时，客户端无法收到短信码，所有输入都不能通过验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项
+4. 设置后端账户剩余验证码条数为0]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件α，填写表单<br />
+2. 点击获取验证码<br />
+3. 输入任意验证码点击提交<br />
+4. 修改后端验证码条数，点击获取验证码<br />
+5. 断开网络输入，正确验证码，点击提交按钮<br />
+6. 开启网络，点击提交按钮]]></actions>
+	<expectedresults><![CDATA[1. 成功填写自定义表单<br />
+2. 手机接收不到验证码<br />
+3. 提示验证码错误<br />
+4. 成功获取验证码<br />
+5. 不关闭表单窗口，小窗提示“内容提交失败请重试”<br />
+6. 成功提交表单]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230903" name="表单组件_异常_输入框边界值验证_10">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[1068]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[1. 名字边界值验证
+2. 公司名字边界值验证
+3. 留言边界值验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件α，不输入任何表单内容，点击提交按钮<br />
+2. 名字输入13个字符，点击提交按钮<br />
+3. 公司地址输入21个字符，点击提交<br />
+4. 公司名字输入21个字符，点击提交<br />
+5. 留言输入76个字符，点击提交]]></actions>
+	<expectedresults><![CDATA[1. 提示姓名不能为空<br />
+2. 提示姓名不能超过12个字符<br />
+3. 提示地址不能超过20个字符<br />
+4. 提示公司名字不能超过20个字符<br />
+5. 提示留言不能超过75个字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230906" name="表单组件_异常_必填项验证_11">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[1069]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[必填项验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项
+4. 所有选项为必选项]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件α，输入姓名，不输入电话号码，点击提交按钮<br />
+2. 输入姓名，不输入验证码，点击提交按钮<br />
+3. 输入电话号码，不输入邮箱，点击提交按钮<br />
+4. 输入邮箱，不输入公司，点击提交按钮<br />
+5. 输入公司，不输入地址，点击提交按钮<br />
+6. 输入地址，不输入留言，点击提交按钮]]></actions>
+	<expectedresults><![CDATA[1. 提示电话号码不能为空<br />
+2. 提示验证码不能为空<br />
+3. 提示邮箱不能为空<br />
+4. 提示公司不能为空<br />
+5. 提示地址不能为空<br />
+6. 提示留言不能为空]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230909" name="表单组件_异常_验证码错误验证_12">
+	<node_order><![CDATA[23]]></node_order>
+	<externalid><![CDATA[1070]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[验证码错误，验证码过期不通过验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a，填写电话号码，点击获取验证码<br />
+2. 输入错误的验证码，点击提交按钮<br />
+3. 更改手机号β1，输入之前正确的验证码，点击提交按钮<br />
+4. 20分钟后，输入正确的验证码，点击提交按钮<br />
+5. 输入手机号β2，点击获取验证码<br />
+6. 输入验证码，点击提交]]></actions>
+	<expectedresults><![CDATA[1. 成功获取验证码<br />
+2. 提示验证码错误，不关闭表单弹窗<br />
+3. 提示验证码错误，不关闭表单弹窗<br />
+4. 提示验证码过期，不关闭表单弹窗<br />
+5. 成功获取验证码<br />
+6. 成功提交表单]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230912" name="表单组件_功能_手机号必选验证_13">
+	<node_order><![CDATA[24]]></node_order>
+	<externalid><![CDATA[1071]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[手机号验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义必选项为手机号码]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a<br />
+2. 分别输入13\14\15\17\18开头的11位纯数字，点击提交]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A<br />
+2. 成功获取验证码，不会提示手机格式错误]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230915" name="表单组件_异常_手机号邮箱格式错误验证_14">
+	<node_order><![CDATA[25]]></node_order>
+	<externalid><![CDATA[1072]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[手机号码，邮箱格式错误验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件a
+2. 给a元件添加自定义的表单组件α
+3. 自定义添加所有表单选项]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件α，分别填写邮箱地址为："testa@"，“test","test@.","test@dd.","@test",".test","@."点击提交<br />
+2. 手机号输入低于11位的电话号码，点击提交<br />
+3. 手机号输入包含非数字（中英文/大小写字符、特殊字符）<br />
+4.  手机号码中包含空格（前/中/后、中英文/全半角空格）<br />
+5. 手机号不以13\14\15\17\18开头。如10、12、63开头]]></actions>
+	<expectedresults><![CDATA[1. 提示邮箱格式错误，不关闭表单弹窗<br />
+2. 提示手机号错误，不关闭表单弹窗<br />
+3. 提示手机号错误，不关闭表单弹窗<br />
+4. 提示手机号错误，不关闭表单弹窗<br />
+5. 提示手机号错误，不关闭表单弹窗]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230918" name="附近搜索_功能_成功进行附件搜索_01_ST">
+	<node_order><![CDATA[26]]></node_order>
+	<externalid><![CDATA[1073]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功进行附近搜索]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件α
+2. 给α添加附近搜索交互事件
+3. 附近搜索关键字为辛巴克]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a<br />
+2. 查看地图中的搜索目标<br />
+3. 点击右上角菜单键，点击刷新<br />
+4. 点击关闭按钮（Android还需测试HW-Back键）]]></actions>
+	<expectedresults><![CDATA[1. 成功进入附近搜索H5页<br />
+2. 成功显示附近10KM以内的辛巴克<br />
+3. 成功刷新页面<br />
+4. 成功返回主题A]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230921" name="附近搜索_功能_图片文字图形浮屏按键交互事件_02">
+	<node_order><![CDATA[27]]></node_order>
+	<externalid><![CDATA[1074]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[图片文字图形浮屏按键附近搜索交互事件验证]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有四页
+2. 第一页分别设置图片，图形，文字，浮屏按键的交互事件为附件搜索，搜索关键字为：“红旗超市”
+3. 第二页分别设置图片，图形，文字，浮屏按键的交互事件为附件搜索，搜索关键字为：“附件搜索失败关键字”
+4. 第三页分别设置图片，图形，文字，浮屏按键的交互事件为附件搜索，不添加搜索关键字]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，分别点击图片，文字，图形，浮屏按键，查看附近搜索结果<br />
+2. 翻页到第二页，分别点击图片，文字，图形，浮屏按键，查看附近搜索结果<br />
+3. 翻页到第三页，分别点击图片，文字，图形，浮屏按键]]></actions>
+	<expectedresults><![CDATA[1. 点击图片，图形，文字，浮屏按键分别进入H5页并显示附近10KM以内的所有红旗超市搜索结果<br />
+2. H5也均提示用户“抱歉，附件没有相关信息”<br />
+3. 点击图片，图形，文字，浮屏按键不会触发交互事件]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230924" name="附近搜索_功能_附件搜索H5页功能验证_03_ST">
+	<node_order><![CDATA[28]]></node_order>
+	<externalid><![CDATA[1075]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[附件搜索H5页的搜周边，导航，去这里，详情功能正常使用]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件α
+2. 给α添加附近搜索交互事件
+3. 附近搜索关键字为舞东风]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件a<br />
+2. 点击搜周边，查看结果<br />
+3. 点击返回键，返回H5首页，点击导航<br />
+4. 点击返回键，返回H5首页，点击去这里<br />
+5. 点击返回键，返回H5首页，点击详情<br />
+6. 放大缩小H5地图]]></actions>
+	<expectedresults><![CDATA[1. 成功进入附件搜索H5，舞东风关键字搜索成功<br />
+2. 成功进入周边<br />
+3. 成功进入导航功能<br />
+4. 成功进入去这里功能<br />
+5. 成功进入详情<br />
+6. 成功缩放地图]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230927" name="附件搜索_异常_未获取授权弱网搜索_04">
+	<node_order><![CDATA[29]]></node_order>
+	<externalid><![CDATA[1076]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[1. 未获得系统位置授权，提示用户，在系统设置中同意APP获取位置权限
+2. 无网络进入附件搜索，提示用户网络错误
+3. 弱网情况下正常加载附件搜索相关信息]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有图片元件α
+2. 给α添加附近搜索交互事件
+3. 附近搜索关键字为舞东风
+4. 取消系统获取APP位置授权]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A，点击元件α<br />
+2. 进入手机系统设置打开APP使用系统位置授权<br />
+3. 进入幻视，断开网络，点击元件α<br />
+4. 链接网络，设置为弱网环境，点击元件α]]></actions>
+	<expectedresults><![CDATA[1. 提示用户定位失败，“无法获取你的位置信息”<br />
+2. 成功开启系统同意幻视使用位置权限<br />
+3. 提示网络错误<br />
+4. 成功加载附件搜索H5页，页面显示正常]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230930" name="位置时间限制识别_功能_成功识别时间位置主题_01_ST">
+	<node_order><![CDATA[30]]></node_order>
+	<externalid><![CDATA[1077]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功识别规定时间规定地理位置的主题]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，当前测试时间在作品设置时间限制内
+2. 测试所在地理位置在作品设置位置限制内]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 更改手机系统时间，超出设置时间范围，扫描主题A<br />
+3. 超出设置时间后，扫描主题A]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A<br />
+2. 成功识别主题A<br />
+3. 扫描10次，提示没有识别到主题，中途不中断，用户无感知]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230933" name="位置时间限制识别_功能_按行政区域/地图区域选址识别_02_ST">
+	<node_order><![CDATA[31]]></node_order>
+	<externalid><![CDATA[1078]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功识别按行政区域、地图区域选择的主题]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，作品无时间限制，位置限制仅为成都市
+2. 存在主题B，作品无时间限制，位置限制区域为天府软件园附近，通过地图区域选址
+3. 存在主题C，作品无时间限制，位置限制为非成都市的其他区域
+4. 存在主题D，作品无时间限制，位置限制区域为非天府软件园附近，通过地图区域选址]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 扫描主题B<br />
+3. 扫描主题C<br />
+4. 点击重试，扫描主题A<br />
+5. 扫描主题D<br />
+6. 点击取消]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A<br />
+2. 成功识别主题B<br />
+3. 提示用户识别位置限制，可重试和取消<br />
+4. 成功识别主题A<br />
+5. 提示用户识别位置限制，可重试和取消<br />
+6. 成功返回首页]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230936" name="位置时间限制识别_异常_未获取系统位置权限_03">
+	<node_order><![CDATA[32]]></node_order>
+	<externalid><![CDATA[1079]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[未获取系统位置授权，提示用户，打开系统获取位置权限]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，作品无时间限制，位置限制仅为成都市
+2. 手机系统未同意幻视使用位置定位功能]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 开启幻视调用系统定位功能，断开网络，关闭AR天气自动定位<br />
+3. 扫描主题A<br />
+4. 开启AR天气自动定位，扫描主题A<br />
+5. 开启网络，扫描主题A]]></actions>
+	<expectedresults><![CDATA[1. 提示用户识别位置限制，可重试和取消<br />
+2. 成功关闭AR天气自动定位功能<br />
+3. 提示用户识别位置限制，可重试和取消<br />
+4. 成功识别主题A<br />
+5. 成功识别主题A]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230939" name="3D模型交互事件_功能_循环播放模型动作贴图_01_ST">
+	<node_order><![CDATA[33]]></node_order>
+	<externalid><![CDATA[1080]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[图片，文字，图形，浮屏按键支持更改模型交互事件，可循环触发模型动作，循环触发模型 贴图]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A里有2页，每一页均有一个带有模型动作，模型贴图的3D模型，3D模型贴图带有png,jpg,tga格式
+2. 第一页的3D模型动作设置为全部动作，循环播放，第二页的3D模型动作设置为无动作
+3. 第一页分别设置图片，图形，文字，浮屏按键的交互事件为播放模型动作，模型动作多选（至少2个）
+4. 第二页分别设置图片，图形，文字，浮屏按键的交互事件为更改模型贴图，模型贴图添加所有可选格式贴图的循环设置]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 快速多次点击第一页的图片，图形，文字，浮屏按键<br />
+3. 翻页到第二页<br />
+4. 快速多次点击第二页的图片，图形，文字，浮屏按键]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A，第一页的模型全部动作循环播放<br />
+2. 图片，图形，文字，浮屏按键切换多个动作<br />
+3. 成功翻页到第二页，第二页的模型不播放动作<br />
+4. 图片，图形，文字，浮屏按键切换不同格式的贴图]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230942" name="3D模型交互事件_功能_模型更改自身贴图动作_02_ST">
+	<node_order><![CDATA[34]]></node_order>
+	<externalid><![CDATA[1081]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[3D模型更改自身贴图动作]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A第一页有2个3D模型和一个 GIF元件
+2. 2个模型都带有模型动作，模型贴图的3D模型，3D模型贴图带有png,jpg,tga格式
+3. 设置3D模型1的交互事件为循环更改3D模型1的贴图
+4. 设置3D模型2的交互事件为循环更改3D模型2的动作
+5. 设置GIF图片元件交互事件为循环更改3D模型1的动作]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 多次快速的点击3D模型1<br />
+3. 多次快速的点击3D模型2<br />
+4. 多次快速的点击GIF图片]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A，3D模型1,2正常显示<br />
+2. 成功循环切换3D模型1的贴图<br />
+3. 成功循环切换3D模型2的动作<br />
+4. 成功循环切换3D模型1的动作]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230945" name="3D模型交互事件_功能_unity3D格式模型更改贴图动作_03">
+	<node_order><![CDATA[35]]></node_order>
+	<externalid><![CDATA[1082]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[unity3D格式模型更改贴图动作]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A第一页有1个unity3D格式的3D模型a，1个GIF的图片元件；a带有动作，贴图（包含jpg,png,tga）
+2. 第二页有一个unity3D格式的3D模型b，b带有动作，贴图（包含jpg,png,tga）
+3. 设置模型a交互事件为循环更改模型a的贴图
+4. 设置模型b交互事件为循环更改模型b的动作
+5. 设置GIF交互事件为更改模型a的动作]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 多次快速的点击3D模型a<br />
+3. 多次快速的点击GIF图片<br />
+4. 多次快速的点击3D模型b]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A<br />
+2. 成功循环切换3D模型a的贴图<br />
+3. 成功循环切换3D模型a的动作<br />
+3. 成功循环切换3D模型b的动作]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230948" name="错误日志_功能_开启查看关闭错误日志_01_ST">
+	<node_order><![CDATA[36]]></node_order>
+	<externalid><![CDATA[1083]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[开启，查看，关闭，清除错误日志]]></summary>
+	<preconditions><![CDATA[进入幻视APP关于我们页面]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 连续点击版本号10次<br />
+2. 进入扫描识别页，扫描任意主题<br />
+3. 点击识别页的“识别错误日志”按钮<br />
+4. 进入指定目录查看日志相关信息<br />
+5. 进入关于我们页，连续点击10次版本号<br />
+6. 进入指定目录查看日志]]></actions>
+	<expectedresults><![CDATA[1. 成功开启错误日志<br />
+2. 成功开始识别主题<br />
+3. 成功保存本次识别日志<br />
+4. 日志信息包含：<br />
+识别时的截图（最后一张返回有结果的截图）<br />
+获取到的主题图（如果有）<br />
+日志文本信息：日志记录时间 APP版本 机型<br />
+系统版本 网络种类 是否离线识别 识别耗时（从截图上传到返回结果）<br />
+日志中，一条记录以一个文件夹形式保存到固定的app目录下<br />
+5. 成功关闭错误日志，扫描页隐藏错误日志按钮<br />
+6. 日志被清除]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="230951" name="交互操作_功能_触发GIF和透明视频动效验证_01">
+	<node_order><![CDATA[37]]></node_order>
+	<externalid><![CDATA[1084]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[触发GIF或透明视频动效时，每触发一次GIF和透明视频都重新载入播放]]></summary>
+	<preconditions><![CDATA[1. 存在主题A，主题A存在GIF图片和透明视频
+2. GIF图片和透明视频均带有动效（动效随机）
+3. 存在图片元件a，b，a触发GIF动效，b触发透明视频动效]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 扫描主题A<br />
+2. 点击元件a<br />
+3. 点击元件b<br />
+4. 多次重复点击元件a<br />
+5. 多次重复点击元件b]]></actions>
+	<expectedresults><![CDATA[1. 成功识别主题A，只显示a，b元件<br />
+2. 成功加载GIF元件，正常播放<br />
+3. 成功加载透明是元件，正常播放<br />
+4. 连续触发GIF动效，GIF均会重新加载<br />
+5. 连续触发透明视频动效，透明视频均会重新加载]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>

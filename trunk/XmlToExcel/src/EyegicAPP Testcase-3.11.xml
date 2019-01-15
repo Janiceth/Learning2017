@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="APP3.11测试用例" >
+
+<testcase name="红包领取_功能_超过有效期48小时点击分享链接_01-ST">
+<node_order><![CDATA[1]]></node_order>
+<summary><![CDATA[验证分享链接超过有效期之后页面按钮显示和功能]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且超过48小时未领取的红包分享链接
+2、微信已授权成功]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[3]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击已过期的分享链接<br />
+2、查看界面按钮显示<br />
+3、点击“红包已过期”按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、按钮显示为“红包已过期”<br />
+3、按钮置灰不可点，无异常发生]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_在领取红包界面等待红包过期，点击分享链接_02">
+<node_order><![CDATA[2]]></node_order>
+<summary><![CDATA[验证在领取红包界面等待红包过期之后的操作]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、微信已授权成功，当前界面为红包领取界面]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、在领取红包界面等待红包过期，点击领取红包按钮<br />
+2、查看提示框界面显示<br />
+3、查看提示框内容显示<br />
+4、点击提示框的确认按钮<br />
+5、再次点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、弹出“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"此红包已超过48小时有效期"<br />
+4、关闭提示框，返回领取红包界面<br />
+5、按钮可点击，依然弹出"红包发放失败"提示框]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_领取红包时微信支付状态返回存在风险_01">
+<node_order><![CDATA[3]]></node_order>
+<summary><![CDATA[验证微信支付状态返回存在风险时领取红包]]></summary>
+<preconditions><![CDATA[1、存在微信支付状态返回存在风险的微信账号，例如未实名认证的微信账号
+2、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击分享链接，微信授权成功<br />
+2、点击"领取红包"按钮<br />
+3、查看界面UI显示<br />
+4、查看提示框内容显示<br />
+5、点击提示框的确认按钮<br />
+6、再次点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、弹出“红包发放失败"提示框<br />
+3、界面显示正常，布局合理，与UI设计一致<br />
+4、内容显示为"您的微信号无法正常接收红包已被微信拦截，请检查账户是否实名认证"<br />
+5、关闭提示框，返回领取红包界面<br />
+6、按钮可点击，依然弹出"红包发放失败"提示框]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_领取红包时微信号被列入黑名单_02-ST">
+<node_order><![CDATA[4]]></node_order>
+<summary><![CDATA[验证微信号被列入黑名单时领取红包]]></summary>
+<preconditions><![CDATA[1、存在被列入黑名单的微信号
+2、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击分享链接，微信授权成功<br />
+2、点击"领取红包"按钮<br />
+3、查看界面UI显示<br />
+4、查看提示框内容显示<br />
+5、点击提示框的确认按钮<br />
+6、再次点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、弹出“红包发放失败"提示框<br />
+3、界面显示正常，布局合理，与UI设计一致<br />
+4、内容显示为"您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利"<br />
+5、关闭提示框，返回领取红包界面<br />
+6、按钮可点击，依然弹出"红包发放失败"提示框]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_领取红包时红包领取次数超过微信限制_03">
+<node_order><![CDATA[5]]></node_order>
+<summary><![CDATA[验证当天红包领取次数超过微信限制时领取红包]]></summary>
+<preconditions><![CDATA[1、存在当天红包领取次数超过微信限制的微信号
+2、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击分享链接，微信授权成功<br />
+2、点击"领取红包"按钮<br />
+3、查看界面UI显示<br />
+4、查看提示框内容显示<br />
+5、点击提示框的确认按钮<br />
+6、再次点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、弹出“红包发放失败"提示框<br />
+3、界面显示正常，布局合理，与UI设计一致<br />
+4、内容显示为"您的微信号已达红包领取数量限制，请明天再来领取"<br />
+5、关闭提示框，返回领取红包界面<br />
+6、按钮可点击，依然弹出"红包发放失败"提示框]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_当天领取红包次数超过限制隔天领取红包_04">
+<node_order><![CDATA[6]]></node_order>
+<summary><![CDATA[验证当天红包领取次数超过微信限制隔天领取红包]]></summary>
+<preconditions><![CDATA[1、存在当天红包领取次数超过微信限制的微信号
+2、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、隔一天点击分享链接，微信授权成功<br />
+2、点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、可以领取成功]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_功能_领取红包时其他异常情况处理_05">
+<node_order><![CDATA[7]]></node_order>
+<summary><![CDATA[验证领取红包时其他异常情况处理]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、隔一天点击分享链接，微信授权成功<br />
+2、请求超时、无网络或者余额不足时点击"领取红包"按钮<br />
+3、查看界面UI显示<br />
+4、查看提示框内容显示<br />
+5、点击提示框的确认按钮<br />
+6、再次点击"领取红包"按钮]]></actions>
+<expectedresults><![CDATA[1、进入领取红包界面<br />
+2、弹出“红包发放失败"提示框<br />
+3、界面显示正常，布局合理，与UI设计一致<br />
+4、内容显示为"请求超时，请稍后重试"<br />
+5、关闭提示框，返回领取红包界面<br />
+6、按钮可点击]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包已过期且微信被列入黑名单_06">
+<node_order><![CDATA[8]]></node_order>
+<summary><![CDATA[验证领取红包时红包已过期且微信已被列入黑名单]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号已被幻视列入黑名单]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、等待红包过期，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包已过期且微信未实名认证_07">
+<node_order><![CDATA[9]]></node_order>
+<summary><![CDATA[验证领取红包时红包已过期且微信未实名认证]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号未实名认证]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、等待红包过期，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"此红包已超过48小时有效期"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时无网络且微信未实名认证_08">
+<node_order><![CDATA[10]]></node_order>
+<summary><![CDATA[验证领取红包时无网络且微信未实名认证]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号未实名认证]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、断开网络，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时余额不足且微信未实名认证_09">
+<node_order><![CDATA[11]]></node_order>
+<summary><![CDATA[验证领取红包时余额不足且微信未实名认证]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号未实名认证
+4、微信公众号余额不足]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包已过期且领取次数超过微信限制_10">
+<node_order><![CDATA[12]]></node_order>
+<summary><![CDATA[验证领取红包时红包已过期且领取次数超过微信限制]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号当天领取次数超过微信限制]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、等待红包过期，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"此红包已超过48小时有效期"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包已过期且无网络_11">
+<node_order><![CDATA[13]]></node_order>
+<summary><![CDATA[验证领取红包时红包已过期且无网络]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、等待红包过期，断开当前网络，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包已过期且余额不足_12">
+<node_order><![CDATA[14]]></node_order>
+<summary><![CDATA[验证领取红包时红包已过期且余额不足]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信公众号余额不足]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、等待红包过期，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"此红包已超过48小时有效期"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时被列入黑名单且领取次数超过微信限制_13">
+<node_order><![CDATA[15]]></node_order>
+<summary><![CDATA[验证领取红包时被列入黑名单且领取次数超过微信限制]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号当前领取次数超过微信限制且该微信账号已被幻视列入黑名单]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时被列入黑名单且无网络_14">
+<node_order><![CDATA[16]]></node_order>
+<summary><![CDATA[验证领取红包时被列入黑名单且无网络]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号已被幻视列入黑名单]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、断开当前网络，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时被列入黑名单且余额不足_15">
+<node_order><![CDATA[17]]></node_order>
+<summary><![CDATA[验证领取红包时被列入黑名单且余额不足]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号已被幻视列入黑名单
+4、微信公众号余额不足]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包领取次数超过微信限制且无网络_16">
+<node_order><![CDATA[18]]></node_order>
+<summary><![CDATA[验证领取红包时红包领取次数超过微信限制且无网络]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号当天领取次数超过微信限制]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、断开当前网络，点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包领取_异常_领取红包时红包领取次数超过微信限制且余额不足_17">
+<node_order><![CDATA[19]]></node_order>
+<summary><![CDATA[验证领取红包时红包领取次数超过微信限制且余额不足]]></summary>
+<preconditions><![CDATA[1、存在游戏验证方式为微信登录且没超过48小时未领取的红包分享链接
+2、当前界面为领取红包界面
+3、微信账号当天领取次数超过微信限制
+4、微信公众号余额不足]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1、点击"领取红包"按钮<br />
+2、查看界面UI显示<br />
+3、查看提示框内容显示]]></actions>
+<expectedresults><![CDATA[1、只弹出一个“红包发放失败"提示框<br />
+2、界面显示正常，布局合理，与UI设计一致<br />
+3、内容显示为"请求超时，请稍后重试"]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_验证红包金额生成_01">
+<node_order><![CDATA[20]]></node_order>
+<summary><![CDATA[从服务器获取红包金额验证]]></summary>
+<preconditions><![CDATA[1.存在可识别的红包主题A；
+2.配置Fiddler抓包]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A<br />
+2.点击红包→点击开始<br />
+3.直至红包游戏结束<br />
+4.查看Fiddler抓包数据]]></actions>
+<expectedresults><![CDATA[4.APP发送给服务器信息为接红包个数、游戏ID、微信ID，服务器返回给APP的信息包括分享链接地址、红包个数、每个红包的金额、红包总额。]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_重新获取红包金额_02-ST">
+<node_order><![CDATA[21]]></node_order>
+<summary><![CDATA[红包金额获取失败，重新获取]]></summary>
+<preconditions><![CDATA[1.存在可识别的红包主题A；
+2.设置网络环境为正常网络]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A<br />
+2.点击红包→点击开始<br />
+3.在红包游戏过程中，中断网络<br />
+4.重新连接网络，点击重试<br />
+5.点击分享]]></actions>
+<expectedresults><![CDATA[3.网络中断后，可继续红包游戏直至结束，当游戏结束后，提示“红包金额获取失败，请重试”<br />
+4.重连网络后，重新发送游戏结果给服务器，显示进度并提示：“正在从服务器获取红包金额”,   成功获取到红包金额数据<br />
+5.分享红包结果至朋友圈（微信好友、微博）成功]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_中奖难度与红包总额关联检查_03-ST">
+<node_order><![CDATA[22]]></node_order>
+<summary><![CDATA[检查中奖难度与单次红包发放总额关联]]></summary>
+<preconditions><![CDATA[1.网络连接正确；
+2.存在可识别的红包主题A，设置红包难度为容易、单次红包总额为10元、红包个数为10个]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[3]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A<br />
+2.点击红包→点击开始，开始红包游戏<br />
+3.接住全部红包，查看红包总额<br />
+4.依次修改红包中奖难度为一般、稍难、困难，重复步骤1~3]]></actions>
+<expectedresults><![CDATA[3.中奖难度为容易时，红包总额∈[单次红包总额*0.9，单次红包总额*1]，此处红包总额∈[9元,10元]<br />
+4.1中奖难度为一般，红包总额∈[单次红包总额*0.85，单次红包总额*1]，此处红包总额∈[8.5元,10元]<br />
+4.2中奖难度为稍难，红包总额∈[单次红包总额*0.8，单次红包总额*1]，此处红包总额∈[8元,10元]<br />
+4.3中奖难度为困难，红包总额∈[单次红包总额*0.7，单次红包总额*1]，此处红包总额∈[7元,10元]]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_单个红包金额检查_04-ST">
+<node_order><![CDATA[23]]></node_order>
+<summary><![CDATA[检查单个红包金额]]></summary>
+<preconditions><![CDATA[1.网络连接正确；
+2.存在可识别的红包主题A，红包金额设置为10元，红包个数为10个，其他参数设置为默认]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[3]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A，并开始红包游戏<br />
+2.分别接住1个红包，5个红包，10个红包，查看每个红包金额<br />
+3.分别修改红包个数为50个、100个，重复步骤1~2<br />
+]]></actions>
+<expectedresults><![CDATA[2.接住红包个数=1时，其红包金额∈[1元,1.65元]，<br />
+   当接住红包个数＞1时，其单个红包金额∈（0.45元,1.55元）,总金额≥1元<br />
+3.1接住红包个数=1时，其单个红包金额=1元，<br />
+    当接住红包个数＞1时，其单个红包金额∈（0.79元,1.10），总金额≥1<br />
+3.2接住红包个数=1时，其单个红包金额=1元，<br />
+    当接住红包个数＞1时，其单个红包金额∈（0.85元,1.05元）]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_黑名单用户玩游戏-ST">
+<node_order><![CDATA[24]]></node_order>
+<summary><![CDATA[验证黑名单用户能否开始红包游戏]]></summary>
+<preconditions><![CDATA[1.在admin将“test_user”设置为黑名单用户
+2.存在微信认证的主题A]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A，绑定微信<br />
+2.点击开始，玩红包游戏<br />
+3.关闭弹窗，界面返回到红包界面]]></actions>
+<expectedresults><![CDATA[1.成功绑定<br />
+2.弹窗提示：您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利<br />
+无法进行红包游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_界面_黑名单用户玩游戏">
+<node_order><![CDATA[25]]></node_order>
+<summary><![CDATA[验证黑名单用户开始红包游戏的界面]]></summary>
+<preconditions><![CDATA[1.在admin将“test_user”设置为黑名单用户
+2.存在微信认证的主题A]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A，绑定微信<br />
+2.点击开始，玩红包游戏，检查界面显示]]></actions>
+<expectedresults><![CDATA[1.成功绑定<br />
+2.弹窗大小位置合理，提示内容友好，无错别字]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="界面"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_游戏次数用完后黑名单用户玩游戏">
+<node_order><![CDATA[26]]></node_order>
+<summary><![CDATA[验证次数和黑名单的弹窗优先级]]></summary>
+<preconditions><![CDATA[
+1.存在微信认证的主题A
+2.该主题存在资格次数为：1次的红包
+
+]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题，绑定微信<br />
+2.点击开始玩游戏，游戏结束后返回红包界面<br />
+3.在admin将“test_user”设置为黑名单用户<br />
+4.点击红包，再次开始游戏<br />
+]]></actions>
+<expectedresults><![CDATA[1.成功绑定<br />
+2.成功开始游戏并返回到红包界面<br />
+3.设置成功<br />
+4.弹窗提示：您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利<br />
+无法进行红包游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_账户余额不足时黑名单用户玩游戏">
+<node_order><![CDATA[27]]></node_order>
+<summary><![CDATA[验证账户余额不足和黑名单用户弹窗的优先级]]></summary>
+<preconditions><![CDATA[1.存在微信认证的主题A
+2.该主题存在结束条件为：账户余额小于10]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A，绑定微信<br />
+2.点击开始，玩红包游戏<br />
+3.关闭弹窗，界面返回到红包界面]]></actions>
+<expectedresults><![CDATA[1.成功绑定<br />
+2.成功开始游戏并返回到红包界面<br />
+3.弹窗提示：您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利<br />
+无法进行红包游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_弱网环境下黑名单用户开始红包游戏">
+<node_order><![CDATA[28]]></node_order>
+<summary><![CDATA[验证网络问题和黑名单的弹窗优先级]]></summary>
+<preconditions><![CDATA[1.在admin将“test_user”设置为黑名单用户
+2.存在微信认证的主题A
+]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[1]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题，绑定微信<br />
+2.将网络环境设置为弱网<br />
+3.点击红包，再次开始游戏<br />
+]]></actions>
+<expectedresults><![CDATA[1.成功绑定<br />
+2.弱网环境成功设置<br />
+3.弹窗提示：游戏加载失败，请稍后重试]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_取消黑名单账户-ST">
+<node_order><![CDATA[29]]></node_order>
+<summary><![CDATA[验证取消黑名单用户，能否重新开始游戏]]></summary>
+<preconditions><![CDATA[1.在admin将“test_user”账号从黑名单中移除
+2.存在微信认证的主题A]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A。<br />
+2.点击开始，玩红包游戏<br />
+]]></actions>
+<expectedresults><![CDATA[1.成功扫描<br />
+2.能够成功开始游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="红包组件_功能_游戏过程中设置黑名单">
+<node_order><![CDATA[30]]></node_order>
+<summary><![CDATA[验证在红包游戏进行中将账号设置为黑名单，游戏是否中断]]></summary>
+<preconditions><![CDATA[1.存在微信认证的主题A]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.扫描主题A<br />
+2.点击开始，玩红包游戏<br />
+3.游戏过程中，在admin将微信账号设为黑名单]]></actions>
+<expectedresults><![CDATA[1.成功扫描<br />
+2.能够成功开始游戏<br />
+3.游戏不会中断]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="领取红包_功能_游戏结束后将用户从黑名单移除">
+<node_order><![CDATA[31]]></node_order>
+<summary><![CDATA[验证分享链接后，将用户从黑名单移除能否领取红包]]></summary>
+<preconditions><![CDATA[1.存在微信认证的主题A，B
+2.游戏开始后将“test_user”设为了黑名单]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.游戏结束，分享结果至微信朋友圈<br />
+2.在admin将用户“test_user”从黑名单移除<br />
+3.打开链接，点击领取红包。<br />
+4.重新扫描B,点击开始红包游戏]]></actions>
+<expectedresults><![CDATA[1.分享成功<br />
+2.设置成功<br />
+3.成功领取红包<br />
+4.成功开始游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+
+<testcase name="领取红包_功能_领取红包后将用户设置为黑名单-ST">
+<node_order><![CDATA[32]]></node_order>
+<summary><![CDATA[验证领取红包后将用户设置为黑名单是否影响后面的红包游戏]]></summary>
+<preconditions><![CDATA[1.存在微信认证的主题A，B
+]]></preconditions>
+<execution_type><![CDATA[1.0]]></execution_type>
+<importance><![CDATA[2]]></importance>
+<steps>
+<step>
+<step_number><![CDATA[1]]></step_number>
+<actions><![CDATA[1.游戏结束，分享结果至微信朋友圈<br />
+2.打开链接，点击领取红包<br />
+3.在admin将用户“test_user”设置为黑名单<br />
+4.重新扫描主题B，点击红包]]></actions>
+<expectedresults><![CDATA[1.分享成功<br />
+2.成功领取<br />
+3.设置成功<br />
+4.弹窗提示：您的微信号因涉嫌违规操作，已被列入幻视黑名单，对于已存在的违规行为幻视保留追究法律责任的权利<br />
+无法进行红包游戏]]></expectedresults>
+<execution_type><![CDATA[1.0]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"></keyword>
+</keywords>
+<requirement><doc_id><![CDATA[]]></doc_id></requirement>
+</testcase>
+</testsuite>
+

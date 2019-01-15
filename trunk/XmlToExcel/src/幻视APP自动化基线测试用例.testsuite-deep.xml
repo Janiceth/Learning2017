@@ -1,0 +1,2853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="288095" name="幻视APP自动化基线测试用例" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[幻视APP自动化基线测试用例]]></details> 
+<testsuite id="288096" name="安装卸载自动化" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[<p>
+	APP安装卸载</p>
+]]></details> 
+
+<testcase internalid="71940" name="APP首次启动_功能_引导/权限获取_01_ST">
+	<node_order><![CDATA[70]]></node_order>
+	<externalid><![CDATA[801]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[APP首次启动，首页引导，权限获取]]></summary>
+	<preconditions><![CDATA[APP首次安装]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视APP
+<br />
+2.查看引导视频
+<br />
+3.点击同意摄像头，位置，录音，文件访问权限]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.引导动画视频显示正确，和设计保持一致
+<br />
+3.权限获取成功]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="71967" name="首页数据下载_功能_数据成功下载_10">
+	<node_order><![CDATA[79]]></node_order>
+	<externalid><![CDATA[810]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[首次启动，数据下载成功]]></summary>
+	<preconditions><![CDATA[1.首次启动幻视APP]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视APP
+<br />
+2.查看首页推广作品数据下载
+<br />
+3.查看AR天气入口数据下载]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.推广作品下载成功，没有破图，空图现象
+<br />
+3.AR天气数据下载成功]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="71985" name="安装卸载_场景_开发工具安装_02">
+	<node_order><![CDATA[85]]></node_order>
+	<externalid><![CDATA[816]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[通过开发工具（Xcode，Eclipse）安装]]></summary>
+	<preconditions><![CDATA[1.拥有Xcode及Eclipse环境]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.1 Android设备通过Eclipse安装幻视APP
+<br />
+1.2 iOS设备通过Xcode安装幻视
+<br />
+2.启动幻视APP
+<br />
+3.扫描任意主题]]></actions>
+	<expectedresults><![CDATA[1.1 成功通过Eclipse安装幻视
+<br />
+1.2 成功通过Xcode安装幻视
+<br />
+2.成功启动幻视
+<br />
+3.成功扫描识别主题]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="71997" name="首页显示_界面_天气入口_01">
+	<node_order><![CDATA[89]]></node_order>
+	<externalid><![CDATA[820]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[天气入口显示检查]]></summary>
+	<preconditions><![CDATA[1.首次启动幻视APP]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视
+<br />
+2.查看天气入口使用提示信息
+<br />
+3.查看天气入口位置，天气信息]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.天气提示信息显示正确，6s后自动隐藏
+<br />
+3.定位成功，城市，天气信息显示和设计保持一致]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72000" name="首页显示_功能_推广图片显示及滑动功能_02">
+	<node_order><![CDATA[90]]></node_order>
+	<externalid><![CDATA[821]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[推广图片显示，滑动功能正确]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视
+<br />
+2.查看推广图片数据下载
+<br />
+3.循环滑动推广图片
+<br />
+4.点击推广图片]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.推广图片数据下载正确
+<br />
+3.成功循环滑动图片，无顺序错乱现象
+<br />
+4.不能进入图片主题，幻视无Crash情况]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72003" name="首页显示_异常_无网络查看推广图片_03">
+	<node_order><![CDATA[91]]></node_order>
+	<externalid><![CDATA[822]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	无网络，推广图片不显示，提示用户网络错误</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.没有网络链接</p>
+<p>
+	2.首次启动幻视APP</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视APP
+<br />
+2.查看推广图片栏]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.幻视提示网络错误，推广图片栏显示网络错误处理UI]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72006" name="首页显示_界面_识别入口动画显示_04">
+	<node_order><![CDATA[92]]></node_order>
+	<externalid><![CDATA[823]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[识别入口动画显示]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视
+<br />
+2.查看识别入口动画效果
+<br />
+3.查看天气和识别入口分割线动画效果]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.识别入口有旋转动效，参考设计图
+<br />
+3.分割线有波浪动效，参考设计图]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72009" name="首页显示_界面_首页菜单栏显示_05">
+	<node_order><![CDATA[93]]></node_order>
+	<externalid><![CDATA[824]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[首页菜单栏显示动效及UI检查]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视
+<br />
+2.点击菜单栏
+<br />
+3.查看菜单列表显示]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.菜单栏弹出动效显示正确，菜单栏下方居中显示
+<br />
+3.菜单栏列表显示发现，导入相册图片，设置，帮助四个选项，菜单栏从平方的图标变成竖直的图标，参考设计图]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72015" name="首页显示_界面_围观组件活动_07">
+	<node_order><![CDATA[95]]></node_order>
+	<externalid><![CDATA[826]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[围观组件活动入口]]></summary>
+	<preconditions><![CDATA[Admin端设置活动H5页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视
+<br />
+2.点击首页的H5活动
+<br />
+3.点击H5活动]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视
+<br />
+2.H5活动显示在首页最上方
+<br />
+3.成功预览H5活动]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="288111" name="AR天气自动化" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>
+	AR天气自动化TestCase</p>
+]]></details> 
+
+<testcase internalid="72282" name="分享模块_功能_AR天气分享成功_01_ST">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[915]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[分享AR天气至微信，微信朋友圈，微博]]></summary>
+	<preconditions><![CDATA[1.链接wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气页
+<br />
+2.点击截图按钮
+<br />
+3.点击分享按钮
+<br />
+4.将截图分享至微博
+<br />
+5.将截图分享至微信朋友
+<br />
+6.将截图分享至微信朋友圈]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气页
+<br />
+2.截图成功，图片弹跳进入分享区域
+<br />
+3.成功进入分享页，图片内容显示正确
+<br />
+4.成功分享至微博
+<br />
+5.成功分享至微信朋友
+<br />
+6.成功分享至微信朋友圈]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72285" name="分享模块_功能_预览AR天气截图_02">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[916]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	预览天气截图</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.AR天气截屏10张</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气页
+<br />
+2.点击最新的AR天气截图
+<br />
+3.点击保存按钮
+<br />
+4.点击退出全屏模式按钮
+<br />
+5.进入系统相册查看保存的截图]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气页
+<br />
+2.成功进入分享页
+<br />
+3.系统提示保存到相册成功
+<br />
+4.成功退出全屏模式
+<br />
+5.AR天气截图保存至系统相册成功]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72288" name="分享模块_功能_退出AR天气分享页_03">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[917]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	退出AR天气分享页</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.AR天气截屏10张</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.AR天气截图之后进入天气分享页
+<br />
+2.点击返回键
+<br />
+3.进入天气分享页
+<br />
+4.分享截图至微信朋友
+<br />
+5.点击返回键]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气分享页
+<br />
+2.成功退出AR天气分享页
+<br />
+3.所有截图显示正确
+<br />
+4.成功分享至微信朋友
+<br />
+5.成功退出AR天气分享页]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72291" name="分享模块_异常_快速滑动AR天气截图_04">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[918]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	快速滑动AR天气截图内容</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.AR天气截屏10张</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气页
+<br />
+2.点击分享按钮
+<br />
+3.来回重复快速滑动AR天气截图
+<br />
+4.快速滑动过程中锁屏解锁
+<br />
+5.快速滑动过程中点击返回键(Android点击HW-Back和返回按钮)
+<br />
+6.点击确认退出键]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气页
+<br />
+2.成功进入分享页
+<br />
+3.滑动顺畅，图片循环预览，没有卡顿，卡住不动，破图现象
+<br />
+4.成功锁屏解锁，截图显示正常
+<br />
+5.成功弹出确认退出的确认框
+<br />
+6.成功退出AR天气分享页]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72294" name="分享模块_异常_预览AR天气截图交互测试_05">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[919]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	预览AR天气截图交互测试</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.AR天气截屏10张</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气分享页
+<br />
+2.点击任意一张截图进入截图全屏模式
+<br />
+3.锁屏解锁，点击图片退出全屏模式再进入全屏模式
+<br />
+4.接收来电，挂掉电话，点击图片退出全屏模式再进入全屏模式
+<br />
+5.点击Home键返回至手机主页
+<br />
+6.点击幻视，使用系统截图方式截取图片]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气分享页
+<br />
+2.成功进入到全屏模式
+<br />
+3.全屏模式显示正确
+<br />
+4.全屏模式显示正确
+<br />
+5.成功返回到手机主页
+<br />
+6.成功截图]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72297" name="分享模块_异常_取消AR天气分享_06">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[920]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	取消AR天气分享</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.AR天气截屏10张</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.AR天气截图之后进入天气分享页
+<br />
+2.点击分享至微信朋友，并取消分享至微信朋友
+<br />
+3.点击分享至微信朋友，选择一个微信朋友
+<br />
+4.取消分享至微信朋友
+<br />
+5.点击分享至微信朋友圈，并取消分享至微信朋友圈
+<br />
+6.点击分享至微博，并取消分享至微博]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气分享页
+<br />
+2.成功取消分享至微信朋友
+<br />
+3.成功选择微信朋友
+<br />
+4.成功取消分享至微信朋友
+<br />
+5.成功取消分享至微信朋友圈
+<br />
+6.成功取消分享至微博]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72018" name="AR天气_界面_天气UI检查_01">
+	<node_order><![CDATA[96]]></node_order>
+	<externalid><![CDATA[827]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[AR天气布局及UI检查]]></summary>
+	<preconditions><![CDATA[1.启动幻视]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入AR天气主页<br />
+	2.检查AR天气布局<br />
+	3.检查AR天气UI</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入AR天气主页<br />
+	2.常用城市列表置顶，添加城市按钮显示于右上角，分享按钮显示于左下角(未截图时隐藏)，截图按钮显示于下方居中，布局设计保持一致<br />
+	3.UI显示和设计保持一致</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72024" name="AR天气_功能_截屏_03_ST">
+	<node_order><![CDATA[98]]></node_order>
+	<externalid><![CDATA[829]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[AR天气截屏功能]]></summary>
+	<preconditions><![CDATA[1.启动幻视]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气主页
+<br />
+2.点击截屏按钮
+<br />
+3.点击分享按钮
+<br />
+4.查看截取的图片
+<br />
+5.滑动图片列表]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气主页，AR效果显示正确
+<br />
+2.成功截屏，截取的图片缩小动效移动，显示于分享按钮处
+<br />
+3.成功进入分享界面
+<br />
+4.截取的图片显示清晰
+<br />
+5.成功滑动图片列表，图片显示正确，没有显示错乱的现象]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72030" name="AR天气_异常_点击无截图的分享按钮区域_05">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[831]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	AR天气点击无截图的分享按钮</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2.APP内无截图</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气主页
+<br />
+2.点击分享按钮区域]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气主页，AR效果显示正确
+<br />
+2.点击没有反应]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72033" name="AR天气_异常_删除天气截图_06">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[832]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	AR天气删除截图</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2.APP内无截图</p>
+<p>
+	3. 截图路径：（内部存储/Android/data/com.idealsee.yixun/files/arhieason/weather）</p>
+<p>
+	4. iOS不能进行增删改操作</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入AR天气主页<br />
+	2.点击截图按钮<br />
+	3.在AR天气截图路径下删除此图片<br />
+	4.进入分享列表查看此图片</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入AR天气主页，AR效果显示正确<br />
+	2.成功截取图片<br />
+	3.成功删除图片<br />
+	4.分享列表不存在刚才的截图，显示无截图图信息</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72036" name="AR天气_异常_增加天气截图_07">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[833]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	AR天气增加截图</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2. 截图路径：（内部存储/Android/data/com.idealsee.yixun/files/arhieason/weather）</p>
+<p>
+	3.&nbsp;iOS不能进行增删改操作</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气主页
+<br />
+2.在AR天气截图路径下添加一张支持格式的图片A
+<br />
+3.进入分享列表查看此图片
+<br />
+4.在AR天气截图路径下添加一张支持不格式的图片B
+<br />
+5.进入分享列表查看此图片]]></actions>
+	<expectedresults><![CDATA[1.成功进入AR天气主页，AR效果显示正确
+<br />
+2.成功导入支持格式的图片A
+<br />
+3.分享列表正常显示图片A
+<br />
+4.成功导入支持格式的图片B
+<br />
+5.分享列表不显示图片B，幻视没有Crash现象]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72048" name="AR天气_界面_城市信息显示_11">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[837]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[城市信息显示]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[ 1.连接网络启动幻视<br />
+2.查看显示的城市信息，天气情况]]></actions>
+	<expectedresults><![CDATA[1.成功启动幻视，AR天气自动定位成功<br />
+2.成功获取天气和位置信息，正确显示自动定位到的城市天气信息]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="易用性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72051" name="AR天气_功能_自动定位_12">
+	<node_order><![CDATA[107]]></node_order>
+	<externalid><![CDATA[838]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[自动定位]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.首次启动幻视，拒绝系统幻视使用手机定位服务<br />
+	2.进入设置，同意系统使用手机定位服务<br />
+	3.进入幻视，链接网络，进入AR天气设置里打开自动定位<br />
+	4.重新进入幻视，链接网络，关闭自动定位，不定位城市，检查定位功能<br />
+	5.断开网络，关闭自动定位，退出再进入幻视，检查定位功能</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.拒绝使用系统定位功能时，默认显示北京市的天气信息<br />
+	2.系统正常启用定位服务<br />
+	3.通过wifi自动定位，AR天气入口定位成功，AR天气主页定位成功<br />
+	4.成功取消自动定位，幻视AR天气入口显示定位的城市<br />
+	5.AR天气入口显示默认北京城市信息</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72054" name="AR天气_功能_添加热门城市_13">
+	<node_order><![CDATA[108]]></node_order>
+	<externalid><![CDATA[839]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[添加热门城市]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.从AR入口进入AR天气主页<br />
+	2.点击添加城市按钮<br />
+	3.点击城市搜索textfield<br />
+	4.从城市列表添加所有热门城市<br />
+	5.从城市列表添加重复城市</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.AR天气效果，天气信息，城市信息显示正确<br />
+	2.成功进入到城市添加页<br />
+	3.成功获取热门城市列表<br />
+	4.成功添加所有热门城市，进入AR主页查看，添加城市显示正确，城市显示顺序和城市列表正确，最多添加12个城市<br />
+	5.添加重复城市，系统提示该城市已经被添加，不能重复添加</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72057" name="AR天气_功能_搜索添加城市_14">
+	<node_order><![CDATA[109]]></node_order>
+	<externalid><![CDATA[840]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[搜索添加城市]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.从AR入口进入AR天气主页，点击添加城市按钮<br />
+	2.输入不存在的城市，国内县级以下的城市进行搜索<br />
+	3.依次输入带有特殊符号（+-／.（）{}！@#&yen;%&hellip;&hellip;&amp;*），数字，图形符号等字符串进行搜索<br />
+	4.在搜索页断开网络，搜索城市信息<br />
+	5.搜索过程中断开网络，查看搜索结果<br />
+	6.1输入所有市级城市并搜索<br />
+	6.2添加搜索到的城市至城市列表<br />
+	6.3查看AR主页城市信息</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入城市添加页<br />
+	2.提示城市不存在<br />
+	3.输入非法字符串，提示城市不存在，系统没有异常<br />
+	4.搜索页断开网络，能够成功搜索城市（城市由第一次搜索时下载至本地）<br />
+	5.搜索过程中断开网络，能够成功搜索并添加城市<br />
+	6.1能够正确搜索市级城市<br />
+	6.2能够成功添加搜索到的城市<br />
+	6.3城市天气信息以及天气正确显示在AR主页，AR主页的城市排序和添加城市页的城市排序保持一致</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72060" name="AR天气_功能_删除城市_15">
+	<node_order><![CDATA[110]]></node_order>
+	<externalid><![CDATA[841]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[删除城市]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，进入AR天气主页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入添加城市页，添加多个城市（10个以上）信息<br />
+2.删除城市列表里的任意城市<br />
+3.删除所有城市<br />
+4.添加已经删除过的城市<br />
+5.删除时，取消删除城市操作<br />
+6.断开网络，点击删除按钮，进行删除城市操作]]></actions>
+	<expectedresults><![CDATA[1.成功添加多个城市信息<br />
+2.成功删除任意城市信息，删除的城市信息在AR天气主页也一并被删除，<br />
+3.成功删除所有城市信息，删除的城市信息在AR天气主页也一并被删除<br />
+4.成功添加已经被删除过的城市，AR天气主页能成功显示添加的城市以及天气信息<br />
+5.成功取消删除城市操作<br />
+6.成功删除城市，删除的城市信息在AR天气主页也一并被删除]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72063" name="AR天气_功能_城市排序_16">
+	<node_order><![CDATA[111]]></node_order>
+	<externalid><![CDATA[842]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[城市排序]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，进入AR天气主页，城市列表中有超过10个城市]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入添加城市页<br />
+2.1拖动城市名字，对城市进行排序操作<br />
+2.2查看AR主页城市排序<br />
+3.1删除其中一个城市<br />
+3.2查看AR主页城市<br />
+4.再随机对剩下城市的排序]]></actions>
+	<expectedresults><![CDATA[1.成功进入添加城市页，城市列表显示正确<br />
+2.1成功拖动城市对城市列表进行排序<br />
+2.2排序之后，进入AR天气主页查看城市显示顺序是否和城市列表排序保持一致<br />
+3.1成功删除城市，被删除城市前后的城市列表顺序保持不变<br />
+3.2此城市在AR天气主页被删除<br />
+4.再进行城市排序，AR天气主页城市顺序和城市列表最新排序保持一致]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72066" name="AR天气_功能_进入城市实景_17">
+	<node_order><![CDATA[112]]></node_order>
+	<externalid><![CDATA[843]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[进入实景]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，城市列表存在至少3个城市信息]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入城市添加页<br />
+	2.点击任意城市进入此城市的实景界面<br />
+	3.拖动城市，对城市重新排序<br />
+	4.点击第一个城市进入实景<br />
+	5.在添加城市页断开网络，点击已存在的城市进入此城市实景<br />
+	6.清除APP缓存，添加新城市，断开网络，点击新城市进入此城市实景</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.能够成功进入添加城市页，城市列表显示正确<br />
+	2.1点击任意城市能够成功进入此城市的实景界面<br />
+	2.2实景界面城市，天气信息显示正确（天气信息包括：城市信息，天气状况，温度，PM2.5状况。通过和风天气API进行验证）<br />
+	2.3城市的显示顺序和城市列表的顺序保持一致<br />
+	3.能够成功对城市重新排序<br />
+	4.重新排序之后，点击第一个城市能够成功进入该城市的实景页<br />
+	5.断开网络，点击已存在的城市，AR主页城市，天气信息显示缓存数据。<br />
+	6.成功进入新城市实景，天气数据显示为未获取到天气信息</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72069" name="AR天气_功能_天气显示主流程_18">
+	<node_order><![CDATA[113]]></node_order>
+	<externalid><![CDATA[844]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[天气信息显示主流程]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，城市列表存在至少3个城市信息]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入AR主页，查看城市的AR天气信息<br />
+	2.展开分时天气走势<br />
+	3.1滑动查看分时天气和未来七天天气情况<br />
+	3.2左右滑动分时天气和未来七天天气<br />
+	4.隐藏分时天气走势<br />
+	5.关闭AR天气主页</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.城市天气信息显示正确（天气信息包括：城市信息，天气状况，温度，PM2.5状况。）,天气状况和AR天气效果保持一致,关闭和添加城市按钮显示清晰，正确<br />
+	2.成功展开天气走势隐藏信息，分时天气信息和未来七天天气情况显示正确<br />
+	3.1分时天气和未来天气显示正确<br />
+	3.2流畅的左右滑动分时天气查看天气信息，流畅的左右滑动查看未来七天天气信息<br />
+	4.成功的隐藏天气走势信息<br />
+	5.成功关闭AR天气主页，返回扫描页</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72075" name="AR天气_场景_退出进入AR天气_20">
+	<node_order><![CDATA[115]]></node_order>
+	<externalid><![CDATA[846]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[ 退出，进入AR天气]]></summary>
+	<preconditions><![CDATA[ 链接上网络，能够成功定位城市]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气主页，断开网络，退出AR天气<br />
+2.1进入AR天气主页<br />
+2.2展开天气分时走势，退出AR天气<br />
+3.1进入AR天气主页，删除多个城市，退出AR天气<br />
+3.2再进入检查城市列表]]></actions>
+	<expectedresults><![CDATA[1.成功退出AR天气<br />
+2.1成功进入AR天气主页，显示缓存天气城市信息<br />
+2.2成功退出AR天气<br />
+3.1成功删除城市并正常退出AR天气<br />
+3.2被删除的城市不会再显示于AR主页以及城市列表]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72078" name="AR天气_场景_AR天气入口显示_21">
+	<node_order><![CDATA[116]]></node_order>
+	<externalid><![CDATA[847]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[AR天气入口专题测试]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.断开网络，点击AR天气入口<br />
+	2.开启网络，删除所有城市，开启自动定位，返回首页查看AR天气入口显示，<br />
+	3.关闭自动定位，返回首页查看AR天气入口显示，<br />
+	4.链接不可访问外网的网络，返回首页查看AR天气入口显示，<br />
+	5.开启网络，关闭自动定位，AR天气主页切换至不同的城市，分别查看AR天气入口显示</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入AR天气主页，AR主页显示缓存城市信息，若没有缓存城市信息则显示北京城市信息。<br />
+	2.自动定位网络（wifi，移动，电信，联通）所在城市<br />
+	3.AR天气入口显示默认北京城市天气信息<br />
+	4.AR天气入口显示默认北京城市天气信息<br />
+	5.AR入口成功显示网络定位城市</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72081" name="AR天气_异常_无网络时场景测试_22">
+	<node_order><![CDATA[117]]></node_order>
+	<externalid><![CDATA[848]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[没有网络专题测试]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，能够成功进入AR天气主页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入城市添加页<br />
+	2.断开网络，添加热门城市列表里的城市<br />
+	3.断开网络，搜索城市，给城市排序<br />
+	4.断开网络，进入任意城市实景<br />
+	5.断开网络，展开天气分时图，切换城市</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入城市添加页<br />
+	2.成功添加热门城市<br />
+	3.成功的搜索添加城市并成功排序，AR主页显示的城市顺序和城市排序保持一致<br />
+	4.成功进入城市实景图，城市天气信息无数据显示正确<br />
+	5.成功展开天气分时图，分时图和未来七天走势显示正确，成功流畅的切换城市，数据不会被刷新。</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72084" name="AR天气_场景_AR天气与手机系统交互_23">
+	<node_order><![CDATA[118]]></node_order>
+	<externalid><![CDATA[849]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[ AR天气主页与手机APP交互测试]]></summary>
+	<preconditions><![CDATA[ 链接上网络，能够成功定位城市，能够成功进入AR天气主页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入AR天气主页，接收短信，返回幻视查看AR天气显示<br />
+2.进入AR天气主页，接收电话，返回幻视查看AR天气显示<br />
+3.进入AR天气主页，接收微信消息，返回幻视查看AR天气显示<br />
+4.进入AR天气主页，锁屏解锁，返回幻视查看AR天气显示<br />
+5.进入AR天气主页，重启设备，进入幻视查看AR天气显示]]></actions>
+	<expectedresults><![CDATA[1.接收到短信之后能够成功返回幻视客户端，AR天气界面显示正确，城市信息，天气信息，AR天气效果显示正常<br />
+2.接收到电话之后能够成功返回幻视客户端，AR天气界面显示正确，城市信息，天气信息，AR天气效果显示正常<br />
+3.接收到微信之后能够成功返回幻视客户端，AR天气界面显示正确，城市信息，天气信息，AR天气效果显示正常<br />
+4.锁屏解锁之后能够成功返回幻视客户端，AR天气界面显示正确，城市信息，天气信息，AR天气效果显示正常<br />
+5.重启设备能正常启动幻视客户端，AR天气界面显示正确，城市信息，天气信息，AR天气效果显示正常]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72087" name="AR天气_场景_添加城市页与手机系统交互_24">
+	<node_order><![CDATA[119]]></node_order>
+	<externalid><![CDATA[850]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[添加城市页与手机APP交互测试]]></summary>
+	<preconditions><![CDATA[链接上网络，能够成功定位城市，能够成功进入AR天气主页]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入添加城市页，接收短信，返回幻视查看AR天气显示<br />
+2.进入添加城市页，接收电话，返回幻视查看AR天气显示<br />
+3.进入添加城市页，接收微信消息，返回幻视查看AR天气显示<br />
+4.进入添加城市页，锁屏解锁，返回幻视查看AR天气显示<br />
+5.进入添加城市页，重启设备，进入幻视查看AR天气显示]]></actions>
+	<expectedresults><![CDATA[1.接收到短信之后能够成功返回幻视客户端，添加城市页界面显示正确，能够成功添加热门城市，手动搜索添加城市，删除城市，给城市排序，进入城市实景<br />
+2.接收到电话之后能够成功返回幻视客户端，添加城市页界面显示正确，能够成功添加热门城市，手动搜索添加城市，删除城市，给城市排序，进入城市实景<br />
+3.接收到微信之后能够成功返回幻视客户端，添加城市页界面显示正确，能够成功添加热门城市，手动搜索添加城市，删除城市，给城市排序，进入城市实景<br />
+4.锁屏解锁之后能够成功返回幻视客户端，添加城市页界面显示正确，能够成功添加热门城市，手动搜索添加城市，删除城市，给城市排序，进入城市实景<br />
+5.重启设备能正常启动幻视客户端，添加城市页界面显示正确，能够成功添加热门城市，手动搜索添加城市，删除城市，给城市排序，进入城市实景<br />
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="288097" name="发现界面自动化" >
+<node_order><![CDATA[10]]></node_order>
+<details><![CDATA[<p>
+	APP发现界面</p>
+]]></details> 
+
+<testcase internalid="72090" name="发现界面_功能_扫描的主题的数据统计_01_ST">
+	<node_order><![CDATA[120]]></node_order>
+	<externalid><![CDATA[851]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	扫描主题点赞，历史数据显示</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2.APP没有给任何点过赞</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.扫描任意主题
+<br />
+2.给主题点赞
+<br />
+3.进入发现页查看数据统计
+<br />
+4.清空幻视缓存
+<br />
+5.查看发现里的数据统计]]></actions>
+	<expectedresults><![CDATA[1.成功识别出主题
+<br />
+2.成功给主题点赞，主题的心形状高亮
+<br />
+3.预览历史和点赞统计均显示出此主题
+<br />
+4.成功清空缓存
+<br />
+5.点赞数据保留，历史数据被清空，不显示]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72093" name="发现界面_功能_发现页里主题的数据统计_02_ST">
+	<node_order><![CDATA[121]]></node_order>
+	<externalid><![CDATA[852]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	发现里的主题点赞，历史数据显示</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2.APP没有给任何点过赞</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.预览发现页任意一个主题
+<br />
+3.给此主题点赞
+<br />
+4.查看发现里的数据统计
+<br />
+5.清空幻视缓存
+<br />
+6.查看发现里的数据统计]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页，此时无统计数据显示
+<br />
+2.成功预览主题
+<br />
+3.成功给主题点赞，主题的心形状高亮
+<br />
+4.预览历史和点赞统计均显示出此主题
+<br />
+5.成功清空缓存
+<br />
+6.点赞数据保留，历史数据被清空, 不显示]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72096" name="发现界面_功能_相册里主题的数据统计_03">
+	<node_order><![CDATA[122]]></node_order>
+	<externalid><![CDATA[853]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	相册里的主题点赞，历史数据显示</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视</p>
+<p>
+	2.APP没有给任何点过赞</p>
+<p>
+	3.图片A能正常识别</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.导入相册图片A
+<br />
+2.给A主题点赞
+<br />
+3.进入发现页
+<br />
+4.查看发现里的数据统计
+<br />
+5.清空幻视缓存
+<br />
+6.查看发现里的数据统计]]></actions>
+	<expectedresults><![CDATA[1.成功识别主题图片A
+<br />
+2.点赞成功，心型高亮
+<br />
+3.成功进入发现页
+<br />
+4.A主题的统计显示于数据统计中
+<br />
+5.成功清空缓存
+<br />
+6.A主题的点赞数据保留，历史数据被清空，不显示。]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72099" name="发现界面_功能_取消点赞数据统计_04">
+	<node_order><![CDATA[123]]></node_order>
+	<externalid><![CDATA[854]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	取消给主题点赞</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.启动幻视，扫描可以被识别成功的主题A</p>
+<p>
+	2.给主题A点赞</p>
+<p>
+	3.进入发现预览主题B，给主题B点赞</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页，查看点赞的数据统计
+<br />
+2.扫描主题A,取消主题A的赞
+<br />
+3.进入发现，预览主题B，取消主题B的赞
+<br />
+4.查看发现页点赞的数据统计]]></actions>
+	<expectedresults><![CDATA[1.点赞统计中有A，B的数据统计
+<br />
+2.成功取消A的赞，心型不再高亮
+<br />
+3.成功取消B的赞，心型不再高亮
+<br />
+4.发现页没有A,B的点赞统计]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72102" name="发现界面_功能_进入统计过的主题_05">
+	<node_order><![CDATA[124]]></node_order>
+	<externalid><![CDATA[855]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[进入统计过的主题]]></summary>
+	<preconditions><![CDATA[1.发现页有被点赞作品A以及预览过的主题B]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.点击统计栏的主题A
+<br />
+3.返回发现页，点击主题B]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页，A,B主题的统计数据显示正确
+<br />
+2.成功进入主题A
+<br />
+3.成功进入主题B]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72105" name="发现界面_功能_历史和赞的最新显示_06">
+	<node_order><![CDATA[125]]></node_order>
+	<externalid><![CDATA[856]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	预览历史和赞的最新显示</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.发现页有4个被赞作品和4个被预览的作品</p>
+<p>
+	2.可以识别的A，B,C主题没有被识别过，没有被赞过</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.扫描可以识别的主题A，给A点赞
+<br />
+2.进入发现统计栏查看
+<br />
+3.扫描B主题，给B点赞
+<br />
+4.扫描C主题，给C点赞
+<br />
+5.进入发现统计页查看]]></actions>
+	<expectedresults><![CDATA[1.成功给A点赞
+<br />
+2.发现页统计栏显示5个主题，A显示在第一个位置，按照时间排序
+<br />
+3.成功给B点赞
+<br />
+4.成功给C点赞
+<br />
+5.发现页统计栏显示5个主题，C,B,A依次排在前三个位置 ]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72108" name="发现界面_功能_赞过的作品列表_07">
+	<node_order><![CDATA[126]]></node_order>
+	<externalid><![CDATA[857]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[赞过的作品列表页面显示]]></summary>
+	<preconditions><![CDATA[1.赞过的作品超过10个]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页，点击“我赞过的”
+<br />
+2.查看赞过的作品显示
+<br />
+3.点击列表最下方的提示信息
+<br />
+4.下来刷新列表
+<br />
+5.预览任意主题]]></actions>
+	<expectedresults><![CDATA[1.成功进入我赞过的列表
+<br />
+2.作品封面显示正确，列表里只有我赞过的作品
+<br />
+3.列表刷新成功
+<br />
+4.列表刷新成功
+<br />
+5.成功预览主题]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72111" name="发现界面_功能_浏览历史列表_08">
+	<node_order><![CDATA[127]]></node_order>
+	<externalid><![CDATA[858]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[浏览历史作品页面显示]]></summary>
+	<preconditions><![CDATA[1.预览历史的作品超过10个]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页，点击“预览历史”
+<br />
+2.查看预览过的作品显示
+<br />
+3.点击列表最下方的提示信息
+<br />
+4.下来刷新列表
+<br />
+5.预览任意主题]]></actions>
+	<expectedresults><![CDATA[1.成功进入我预览过的列表
+<br />
+2.作品封面显示正确，列表里只有我预览过的作品
+<br />
+3.列表刷新成功
+<br />
+4.列表刷新成功
+<br />
+5.成功预览主题]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72114" name="发现界面_功能_清空预览历史列表_09">
+	<node_order><![CDATA[128]]></node_order>
+	<externalid><![CDATA[859]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[清空预览历史数据]]></summary>
+	<preconditions><![CDATA[1.预览历史的作品超过10个]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.清空缓存
+<br />
+2.预览发现中的任意主题A
+<br />
+3.进入预览历史列表
+<br />
+4.下拉刷新预览历史列表]]></actions>
+	<expectedresults><![CDATA[1.成功清除缓存
+<br />
+2.成功进入主题界面A
+<br />
+3.成功进入预览历史列表
+<br />
+4.刷新也只存在主题A]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72117" name="发现界面_功能_刷新热门推荐列表_10">
+	<node_order><![CDATA[129]]></node_order>
+	<externalid><![CDATA[860]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[刷新热门推荐列表]]></summary>
+	<preconditions><![CDATA[连上wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.滑动热门推荐列表
+<br />
+3.刷新热门推荐列表
+<br />
+4.刷新之后，停在热门列表中间，预览任意主题A
+<br />
+5.退出主题
+<br />
+6.刷新热门推荐列表]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页
+<br />
+2.热门列表封面图显示正确，滑动平顺，无闪烁卡顿
+<br />
+3.成功刷新热门推荐列表，封面图片加载成功，显示正常
+<br />
+4.成功进入主题A
+<br />
+5.返回发现列表A主题的位置
+<br />
+6.成功继续刷新热门推荐列表]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72123" name="发现界面_功能_成功搜索主题_12">
+	<node_order><![CDATA[131]]></node_order>
+	<externalid><![CDATA[862]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[成功搜索主题]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入发现页<br />
+	2.输入&ldquo;幻视&rdquo;进行搜索<br />
+	3.预览搜索成功的任意主题A<br />
+	4.退出主题<br />
+	5. 输入符号进行搜索（如：+*/-,.等）</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入发现页<br />
+	2.搜索成功，搜索的主题均带有&quot;卡-D&quot;字符<br />
+	3.成功预览主题A<br />
+	4.成功返回搜索主题页<br />
+	5. 提示没有找到相关主题</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72126" name="发现页面_异常_搜索主题失败_13">
+	<node_order><![CDATA[132]]></node_order>
+	<externalid><![CDATA[863]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[搜索主题失败]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.输入“！2#aY javascript”进行搜索]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页
+<br />
+2.提示搜索失败，搜索页为空]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72129" name="发现页面_异常_无网络搜索主题_14">
+	<node_order><![CDATA[133]]></node_order>
+	<externalid><![CDATA[864]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[无网络搜索主题]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.断开网络，输入“idea”进行搜索]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页
+<br />
+2.提示无网络链接，搜索页为空]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72132" name="发现界面_功能_品牌主页_15">
+	<node_order><![CDATA[134]]></node_order>
+	<externalid><![CDATA[865]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[进入品牌主页]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入发现页<br />
+	2.进入热门推荐列表中的任意主题A<br />
+	3.点击主题左上角的品牌头像<br />
+	4.查看品牌主页<br />
+	5.进入品牌主页任意主题B<br />
+	6.关闭主题B</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入发现页<br />
+	2.成功进入主题A<br />
+	3.成功进入主题A品牌的品牌主页<br />
+	4.品牌头像，简介，素材列表显示正常<br />
+	5.成功进入主题B<br />
+	6.成功返回到发现页</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72135" name="发现界面_功能_品牌交互_16">
+	<node_order><![CDATA[135]]></node_order>
+	<externalid><![CDATA[866]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[品牌主页交互]]></summary>
+	<preconditions><![CDATA[品牌里有有效电话，位置导航（内容创建登录用户名：liaochangjian,密码：liaochangjian）]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入发现页<br />
+	2.搜索并预览&ldquo;liaochangjian&rdquo;账户下的任意作品（内容创建登录用户名：liaochangjian,密码：liaochangjian）<br />
+	3.点击主题左上角的品牌头像<br />
+	4.查看品牌主页<br />
+	5.点击电话号码</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入发现页<br />
+	2.成功预览主题<br />
+	3.成功进入品牌主页<br />
+	4.品牌简介，电话，地址显示正确，AR作品列表显示正常，封面加载正确<br />
+	5.成功弹出拨打电话，提示用户是否拨打电话</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72138" name="发现界面_压力_图片全屏模式_17">
+	<node_order><![CDATA[136]]></node_order>
+	<externalid><![CDATA[867]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[发现主题图片全屏模式可靠性测试]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入发现页
+<br />
+2.预览任意一个发现页里的主题
+<br />
+3.点击右下角主题图片全屏按钮
+<br />
+4.在全屏显示下点击Home键退出幻视
+<br />
+5.启动幻视，退出主题图片全屏显示进入
+<br />
+6.退出全屏模式20次]]></actions>
+	<expectedresults><![CDATA[1.成功进入发现页
+<br />
+2.成功预览主题
+<br />
+3.成功全屏显示主题图片
+<br />
+4.成功退出幻视
+<br />
+5.成功返回全屏显示页，主题图片显示正确
+<br />
+6.正常退出进入全屏模式，幻视正常使用]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72144" name="发现页_功能_虚拟AR录制分享截屏功能_19">
+	<node_order><![CDATA[138]]></node_order>
+	<externalid><![CDATA[869]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[发现页的虚拟AR录制，截屏，分享功能]]></summary>
+	<preconditions><![CDATA[无]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 进入发现页，预览任意主题<br />
+2. 点击分享主题只微信朋友，微博，微信朋友圈<br />
+3. 点击录制按钮录制视频超过3s<br />
+4. 分享录制视频至微信朋友，微博，微信朋友圈<br />
+5. 返回主题，点击截图按钮<br />
+6. 分享截图至微信朋友，微博，微信朋友圈]]></actions>
+	<expectedresults><![CDATA[1. 主题支持陀螺仪功能，背景显示摄像头取景框<br />
+2. 成功分享主题至微信朋友，微博，微信朋友圈<br />
+3. 成功录制视频<br />
+4. 成功分享视频至微信朋友，微博，微信朋友圈<br />
+5. 成功给主题截图<br />
+6. 成功分享截图至微信朋友，微博，微信朋友圈]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="288098" name="APP设置自动化" >
+<node_order><![CDATA[11]]></node_order>
+<details><![CDATA[<p>
+	APP设置</p>
+]]></details> 
+
+<testcase internalid="72147" name="语言设置_功能_跟随中文系统_01">
+	<node_order><![CDATA[139]]></node_order>
+	<externalid><![CDATA[870]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[跟随中文系统语言设置]]></summary>
+	<preconditions><![CDATA[1.幻视语言设置为跟随系统2.设置系统语言为简体中文]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，查看主界面语言显示
+<br />
+2.进入设置查看语言
+<br />
+3.扫描主题查看主题显示语言
+<br />
+4.录制视频查看主题显示语言
+<br />
+5.进入AR天气查看主题显示语言
+<br />
+6.进入发现查看主题语言]]></actions>
+	<expectedresults><![CDATA[1.主界面所有字体均显示为中文字符
+<br />
+2.设置里所有选项以及子集菜单均显示为中文字符
+<br />
+3.扫描主题的主题中的所有字符均显示为中文字符
+<br />
+4.录制的视频分享页的所有字符均显示为中文字符
+<br />
+5.AR天气主页面和添加城市页，所有字符均显示为中文字符
+<br />
+6.发现主页，赞，预览历史以及品牌主页所有字符均显示为中文字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72150" name="语言设置_功能_跟随英文系统_02">
+	<node_order><![CDATA[140]]></node_order>
+	<externalid><![CDATA[871]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[跟随英文系统语言设置]]></summary>
+	<preconditions><![CDATA[1.幻视语言设置为跟随系统2.设置系统语言为英文]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，查看主界面语言显示
+<br />
+2.进入设置查看语言
+<br />
+3.扫描主题查看主题显示语言
+<br />
+4.录制视频查看主题显示语言
+<br />
+5.进入AR天气查看主题显示语言
+<br />
+6.进入发现查看主题语言]]></actions>
+	<expectedresults><![CDATA[1.主界面所有字体均显示为英文字符
+<br />
+2.设置里所有选项以及子集菜单均显示为英文字符
+<br />
+3.扫描主题的主题中的所有字符均显示为英文字符
+<br />
+4.录制的视频分享页的所有字符均显示为英文字符
+<br />
+5.AR天气主页面和添加城市页，所有字符均显示为英文字符
+<br />
+6.发现主页，赞，预览历史以及品牌主页所有字符均显示为英文字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="158293" name="权限设置_功能_取消摄像头权限">
+	<node_order><![CDATA[140]]></node_order>
+	<externalid><![CDATA[1040]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	取消摄像头权限扫描识别</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	无</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. 进入到系统设置，取消幻视摄像头权限<br />
+	2. 启动幻视<br />
+	3. 点击扫描键</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. 成功取消幻视调用系统摄像头权限<br />
+	2. 成功启动幻视<br />
+	3. 提示用户在系统设置中打开幻视调用系统摄像头权限。<br />
+	&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="72153" name="语言设置_功能_跟随日文系统_03">
+	<node_order><![CDATA[141]]></node_order>
+	<externalid><![CDATA[872]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[跟随日文系统语言设置]]></summary>
+	<preconditions><![CDATA[1.幻视语言设置为跟随系统2.设置系统语言为日文]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，查看主界面语言显示
+<br />
+2.进入设置查看语言
+<br />
+3.扫描主题查看主题显示语言
+<br />
+4.录制视频查看主题显示语言
+<br />
+5.进入AR天气查看主题显示语言
+<br />
+6.进入发现查看主题语言]]></actions>
+	<expectedresults><![CDATA[1.主界面所有字体均显示为日文字符
+<br />
+2.设置里所有选项以及子集菜单均显示为日文字符
+<br />
+3.扫描主题的主题中的所有字符均显示为日文字符
+<br />
+4.录制的视频分享页的所有字符均显示为日文字符
+<br />
+5.AR天气主页面和添加城市页，所有字符均显示为日文字符
+<br />
+6.发现主页，赞，预览历史以及品牌主页所有字符均显示为日文字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72156" name="语言设置_功能_选择英文语言_04">
+	<node_order><![CDATA[142]]></node_order>
+	<externalid><![CDATA[873]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[选择英文语言设置]]></summary>
+	<preconditions><![CDATA[1.幻视语言设置为English]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，查看主界面语言显示
+<br />
+2.进入设置查看语言
+<br />
+3.扫描主题查看主题显示语言
+<br />
+4.录制视频查看主题显示语言
+<br />
+5.进入AR天气查看主题显示语言
+<br />
+6.进入发现查看主题语言]]></actions>
+	<expectedresults><![CDATA[1.主界面所有字体均显示为英文字符
+<br />
+2.设置里所有选项以及子集菜单均显示为英文字符
+<br />
+3.扫描主题的主题中的所有字符均显示为英文字符
+<br />
+4.录制的视频分享页的所有字符均显示为英文字符
+<br />
+5.AR天气主页面和添加城市页，所有字符均显示为英文字符
+<br />
+6.发现主页，赞，预览历史以及品牌主页所有字符均显示为英文字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72159" name="语言设置_功能_选择日文语言_05">
+	<node_order><![CDATA[143]]></node_order>
+	<externalid><![CDATA[874]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[选择日文语言设置]]></summary>
+	<preconditions><![CDATA[1.幻视语言设置为日本语]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，查看主界面语言显示
+<br />
+2.进入设置查看语言
+<br />
+3.扫描主题查看主题显示语言
+<br />
+4.录制视频查看主题显示语言
+<br />
+5.进入AR天气查看主题显示语言
+<br />
+6.进入发现查看主题语言]]></actions>
+	<expectedresults><![CDATA[1.主界面所有字体均显示为日文字符
+<br />
+2.设置里所有选项以及子集菜单均显示为日文字符
+<br />
+3.扫描主题的主题中的所有字符均显示为日文字符
+<br />
+4.录制的视频分享页的所有字符均显示为日文字符
+<br />
+5.AR天气主页面和添加城市页，所有字符均显示为日文字符
+<br />
+6.发现主页，赞，预览历史以及品牌主页所有字符均显示为日文字符]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72177" name="开启仅wifi下载数据设置_场景_链接信号弱的wifi扫描主题_11">
+	<node_order><![CDATA[149]]></node_order>
+	<externalid><![CDATA[880]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	开启仅wifi下载数据设置，链接信号弱的wifi扫描主题</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接信号弱的wifi，打开手机网络</p>
+<p>
+	2.存在可识别的主题A</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.进入设置，打开仅wifi下载数据设置<br />
+	2.扫描A主题</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功开启仅wifi下载数据设置<br />
+	2.成功识别主题A</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72204" name="设置界面_功能_清除缓存_20">
+	<node_order><![CDATA[158]]></node_order>
+	<externalid><![CDATA[889]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	成功清除缓存</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.存在可识别的主题A</p>
+<p>
+	2.链接wifi</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视扫描主题A
+<br />
+2.点击清除缓存
+<br />
+3.取消
+<br />
+4.点击清楚缓存
+<br />
+5.点击确定
+<br />
+6.再次扫描主题A]]></actions>
+	<expectedresults><![CDATA[1.成功识别主题A
+<br />
+2.弹出缓存清除提示框，内容显示正确
+<br />
+3.成功取消清楚缓存 
+<br />
+4.弹出缓存清除提示框，内容显示正确
+<br />
+5.成功清除缓存
+<br />
+6.成功识别主题A, 主题A的数据重新下载]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72207" name="设置界面_功能_意见反馈_21">
+	<node_order><![CDATA[159]]></node_order>
+	<externalid><![CDATA[890]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[意见反馈测试]]></summary>
+	<preconditions><![CDATA[1.链接wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.从设置页点击意见反馈
+<br />
+2.不输入任何字符点击发送
+<br />
+3.不输入邮箱或QQ点击发送
+<br />
+4.不输入内容点击发送
+<br />
+5.输入邮箱和内容，点击发送]]></actions>
+	<expectedresults><![CDATA[1.成功进入意见反馈页
+<br />
+2.提示信息不完整
+<br />
+3.提示信息不完整
+<br />
+4.提示信息不完整
+<br />
+5.成功发送意见，admin端查看意见，服务器接收成功]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72210" name="设置界面_功能_关于我们_22">
+	<node_order><![CDATA[160]]></node_order>
+	<externalid><![CDATA[891]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[关于我们]]></summary>
+	<preconditions><![CDATA[1.链接wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.从设置页点击关于我们
+<br />
+2.查看关于我们页面显示
+<br />
+3.点击联系我们，拨打电话
+<br />
+4.登录“用户名：liaochangjian,密码：liaochangjian”
+<br />
+5.扫描liaochangjian账号下更新未发布主题]]></actions>
+	<expectedresults><![CDATA[1.成功进入关于我们页
+<br />
+2.页面显示正确，版本信息显示正确
+<br />
+3.成功拨打正确电话号码
+<br />
+4.成功登录liaochangjian账号，注销显示正确
+<br />
+5.成功识别liaochangjian主题下更新为发布主题，识别出的为最新状态]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72213" name="设置界面_功能_给我们评分_23">
+	<node_order><![CDATA[161]]></node_order>
+	<externalid><![CDATA[892]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[给我们评分]]></summary>
+	<preconditions><![CDATA[1.链接wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.从设置页点击给我们评分
+<br />
+2.查看页面跳转
+<br />
+3.给幻视评分]]></actions>
+	<expectedresults><![CDATA[1.成功点击给我们评分
+<br />
+2.iOS页面跳转到幻视的APP Store，Android页面跳转到幻视的应用商场
+<br />
+3.成功给幻视APP评分]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72216" name="用户管理_功能_合法用户正常登录_24">
+	<node_order><![CDATA[162]]></node_order>
+	<externalid><![CDATA[893]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	合法用户，正常登录</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.手机安装幻视APP并且已打开</p>
+<p>
+	2.服务器存在合法用户A</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入APP设置，点击幻视账户登录
+<br />
+2.填写用户A的正确用户名和密码，点击提交]]></actions>
+	<expectedresults><![CDATA[1.界面跳转到用户登录框
+<br />
+2.1 界面提示用户登录成功
+<br />
+2.2用户登录界面出现注销按钮]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72219" name="用户管理_异常_非法用户拒绝登录_25">
+	<node_order><![CDATA[163]]></node_order>
+	<externalid><![CDATA[894]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	非法用户，拒绝登录</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.手机安装幻视APP并且已打开</p>
+<p>
+	2.数据库不存在用户B</p>
+<p>
+	3.数据库存在用户A</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[1]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.进入APP设置，点击幻视账户登录
+<br />
+2.用户名输入用户B，密码随意填写符合规则，点击提交
+<br />
+3.用户名输入用户A，密码输入非用户A密码，点击提交
+<br />
+4.用户名输入用户A，密码输入用户A密码，点击提交]]></actions>
+	<expectedresults><![CDATA[1.界面跳转到用户登录框
+<br />
+2.登录操作失败，提示用户不存在
+<br />
+3.登录操作失败，提示密码错误
+<br />
+4.用户A登录成功]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="可靠性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72228" name="菜单栏_功能_帮助_28">
+	<node_order><![CDATA[166]]></node_order>
+	<externalid><![CDATA[897]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[菜单栏帮助]]></summary>
+	<preconditions><![CDATA[1.链接wifi]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.打开菜单栏
+<br />
+2.点击帮助按钮
+<br />
+3.在后端修改帮助内容
+<br />
+4.退出幻视断开网络
+<br />
+5.进入幻视打开帮助查看帮助内容
+<br />
+6.链接网络，重新打开帮助]]></actions>
+	<expectedresults><![CDATA[1.帮助按钮显示正确
+<br />
+2.成功进入帮助页
+<br />
+3.修改数据成功
+<br />
+4.成功退出幻视断开网络
+<br />
+5.帮助内容为旧的帮助信息
+<br />
+6.帮助内容为最新内容]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="231059" name="错误日志_功能_开启查看关闭错误日志_01_ST">
+	<node_order><![CDATA[182]]></node_order>
+	<externalid><![CDATA[1120]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[开启，查看，关闭，清除错误日志]]></summary>
+	<preconditions><![CDATA[进入幻视APP关于我们页面]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1. 连续点击版本号10次<br />
+2. 进入扫描识别页，扫描任意主题<br />
+3. 点击识别页的“识别错误日志”按钮<br />
+4. 进入指定目录查看日志相关信息<br />
+5. 进入关于我们页，连续点击10次版本号<br />
+6. 进入指定目录查看日志]]></actions>
+	<expectedresults><![CDATA[1. 成功开启错误日志<br />
+2. 成功开始识别主题<br />
+3. 成功保存本次识别日志<br />
+4. 日志信息包含：<br />
+识别时的截图（最后一张返回有结果的截图）<br />
+获取到的主题图（如果有）<br />
+日志文本信息：日志记录时间 APP版本 机型<br />
+系统版本 网络种类 是否离线识别 识别耗时（从截图上传到返回结果）<br />
+日志中，一条记录以一个文件夹形式保存到固定的app目录下<br />
+5. 成功关闭错误日志，扫描页隐藏错误日志按钮<br />
+6. 日志被清除]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite><testsuite id="288112" name="围观组件自动化" >
+<node_order><![CDATA[12]]></node_order>
+<details><![CDATA[<p>
+	围观组件自动化TestCase</p>
+]]></details> 
+
+<testcase internalid="72540" name="围观组件_功能_登录_01_ST">
+	<node_order><![CDATA[106]]></node_order>
+	<externalid><![CDATA[1001]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	围观登录</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.未登录过围观组件</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.启动幻视，点击围观私信入口<br />
+	2.1 点击微信，使用微信号登录<br />
+	2.2 点击微博，使用微博号登录<br />
+	2.3 点击QQ，使用QQ号登录</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.弹出登录框，微博，微信，QQ登录入口显示正确<br />
+	2.1 成功使用微信登录<br />
+	2.2 成功使用微博登录<br />
+	2.3 成功使用QQ登录</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72552" name="围观组件_功能_用户头像编辑_05">
+	<node_order><![CDATA[110]]></node_order>
+	<externalid><![CDATA[1005]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[用户信息编辑头像]]></summary>
+	<preconditions><![CDATA[1.链接wifi2.存在用户a3.存在可识别带有围观组件的主题A]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.点击围观组件消息入口<br />
+	2.点击用户头像，<br />
+	3.1 选择相册的png，jpg，gif图片作为头像，点击完成<br />
+	3.2 使用拍照作为头像，点击完成<br />
+	&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入用户a主页<br />
+	2.成功弹出修改头像选择框<br />
+	3.成功编辑裁剪头像，头像设置显示正确</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72555" name="围观组件_功能_用户昵称编辑_06">
+	<node_order><![CDATA[111]]></node_order>
+	<externalid><![CDATA[1006]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	用户信息编辑昵称</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.存在用户a</p>
+<p>
+	3.存在可识别带有围观组件的主题A</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.扫描主题A<br />
+	2.点击围观组件消息入口<br />
+	3.点击用户名<br />
+	4.1 输入昵称超过20个字符和小于3个字符，点击确定<br />
+	4.2 输入已经存在的用户名，点击确定<br />
+	4.3 清空名称，点击确定<br />
+	4.4 输入带有符号，空格的用户名，点击确定<br />
+	4.5 输入不重名，test廖123，点击确定</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功识别主题A<br />
+	2.成功进入用户a主页<br />
+	3.成功弹出修改昵称信息输入框，提示信息：中英文及符号不超过12个字符显示正确<br />
+	4.1 提示字符超过限制条件，只保存3-20个字符<br />
+	4.2 提示用户已存在，不能成功保存<br />
+	4.3 提示用户名字不能为空<br />
+	4.4 提示&ldquo;请输入合法的昵称&rdquo;，不能成功保存<br />
+	4.5 正确保存，用户信息修改正确</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72558" name="围观组件_功能_用户登录注销_07">
+	<node_order><![CDATA[112]]></node_order>
+	<externalid><![CDATA[1007]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	用户登录，注销</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.存在可识别带有围观组件的主题A</p>
+<p>
+	3.未登录账户（微信，微博，QQ）</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.点击围观消息入口<br />
+	2.1 登录微信账号<br />
+	2.2 登录微博账号<br />
+	2.3 登录QQ账号<br />
+	3.点击注销<br />
+	4.1 点击取消按钮<br />
+	4.2 点击确认按钮<br />
+	5.扫描主题A，点击围观组件</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功弹出登录选择框<br />
+	2.1 成功登录微信<br />
+	2.2 成功登录微博<br />
+	2.3 成功登录QQ<br />
+	3.弹出确认注销提示框<br />
+	4.1 成功取消注销<br />
+	4.2 成功注销用户<br />
+	5.弹出登录选择框</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72561" name="围观组件_功能_围观组件登录_08">
+	<node_order><![CDATA[113]]></node_order>
+	<externalid><![CDATA[1008]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	从围观组件</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.存在可识别带有围观组件的主题A</p>
+<p>
+	3.未登录账户（微信，微博，QQ）</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.扫描主题A
+<br />
+2.点击围观组件
+<br />
+3.1 点击我来围观，使用微博登录
+<br />
+3.2 点击我来围观，使用微信登录
+<br />
+3.3 点击我来围观，使用QQ登录
+<br />
+4.注销登录
+<br />
+5.1 点击谁在围观，使用微博登录
+<br />
+5.2 点击谁在围观，使用微信登录
+<br />
+5.3 点击谁在围观，使用QQ登录]]></actions>
+	<expectedresults><![CDATA[1.成功识别主题A
+<br />
+2.成功弹出登录框
+<br />
+3.成功使用微博，微信，QQ登录
+<br />
+4.成功注销登录
+<br />
+5.成功使用微博，微信，QQ登录]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72573" name="围观组件_功能_删除对话_12">
+	<node_order><![CDATA[117]]></node_order>
+	<externalid><![CDATA[1012]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	删除用户之间的对话</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.存在可识别带围观组件的主题A</p>
+<p>
+	3.登录账户a（微信，微博，QQ任意）</p>
+<p>
+	4.另一台手机上存在用户b；a，b之间有围观评论消息</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1.启动幻视，进入围观消息入口<br />
+	2.用户a给用户b评论消息<br />
+	3.删除评论消息<br />
+	4.注销用户a,登录用户b<br />
+	5.查看消息入口</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1.成功进入消息列表<br />
+	2.成功评论消息<br />
+	3.成功删除对话<br />
+	4.成功登录用户b<br />
+	5.有新消息显示</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+
+<testcase internalid="72576" name="围观组件_功能_围观对话_13">
+	<node_order><![CDATA[118]]></node_order>
+	<externalid><![CDATA[1013]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	围观对话测试</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	1.链接wifi</p>
+<p>
+	2.存在可识别带围观组件的主题A</p>
+<p>
+	3.登录账户a（微信，微博，QQ任意）</p>
+<p>
+	4.另一台手机上存在用户b；a，b之间有围观评论消息</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[1.启动幻视，点击围观消息入口
+<br />
+2.用户a给用户b评论消息，消息中带有可访问的web链接
+<br />
+3.点击对话中的web链接
+<br />
+4.返回对话列表，用户a继续发送带有表情，字符，中文，数字，符号的对话消息
+<br />
+5.注销账户a，登录账户b
+<br />
+6.查看围观消息入口，进入对话列表]]></actions>
+	<expectedresults><![CDATA[1.成功进入围观消息列表
+<br />
+2.成功发送带有web链接的对话
+<br />
+3.成功进入web链接
+<br />
+4.成功发送对话消息
+<br />
+5.成功登录账户b
+<br />
+6.对话消息显示完整]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite>
+<testcase internalid="159145" name="导入图片_功能_导入图片识别">
+	<node_order><![CDATA[144]]></node_order>
+	<externalid><![CDATA[1044]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	导入图片识别</p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	相机中存在可识别图片A，不可识别图片B</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	1. 点击首页左菜单栏<br />
+	2. 点击导入相册图片<br />
+	3. 选择可识别主题A<br />
+	4. 返回首页，点击导入相册图片<br />
+	5. 选择不可识别图片B</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	1. 菜单栏显示正常<br />
+	2. 成功进入相册<br />
+	3. 成功识别主题A<br />
+	4. 成功进入相册<br />
+	5. 提示&ldquo;没有发现幻视主题&rdquo;，重试和取消按钮显示正确</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<keywords><keyword name="功能性"><notes><![CDATA[
+
+]]></notes></keyword>
+</keywords></testcase>
+</testsuite>
